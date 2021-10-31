@@ -17,7 +17,7 @@ add_action( 'wp_enqueue_scripts', function() {
   wp_enqueue_style( 'hepere-child-style', HEPERE_CHILD_THEME_URI . '/style.css', $dependency_style);
   //JavaScript
   $dependency_script = array('jquery','hepere-main');
-  wp_enqueue_script('hepere-child-main',HEPERE_THEME_URI . '/js/main.js', $dependency_script);
+  wp_enqueue_script('hepere-child-main',HEPERE_CHILD_THEME_URI . '/js/main.js', $dependency_script);
 });
 
 /**
