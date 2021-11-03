@@ -3,7 +3,7 @@
  * フロント側のCSSを記述する
  */
 .p-fv {
-  background-image: url('fv.jpg');
+  background-image: url('./../img/fv.jpg');
   background-size: cover;
   height: 100vh;
 }
