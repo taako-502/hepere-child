@@ -4,9 +4,13 @@
  */
 
 /* ヘッダー */
-.l-header {
+header.l-header {
   position: absolute;
   background-color: transparent;
+}
+
+.l-header--series {
+	display: none;
 }
 
 /* ファーストビューの設定 */
