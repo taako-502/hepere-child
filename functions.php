@@ -33,6 +33,9 @@ add_action( 'enqueue_block_editor_assets', function() {
  * トップページのヘッダー下に挿入
  */
 add_action( 'hepere_page_under_header', function() {
+  if ( ! is_front_page() ) {
+    return;
+  }
   ?>
   <div class="p-fv">
     <div class="p-fv__wrapper">
