@@ -18,6 +18,10 @@ add_action( 'wp_enqueue_scripts', function() {
   //JavaScript
   $dependency_script = array('jquery','hepere-main');
   wp_enqueue_script('hepere-child-main',HEPERE_CHILD_THEME_URI . '/js/main.js', $dependency_script);
+
+  if( is_front_page() ) {
+    wp_enqueue_style( 'hepere-child-frontpage', HEPERE_CHILD_THEME_URI . '/style/frontpage.css', $dependency_style);
+  }
 });
 
 /**
