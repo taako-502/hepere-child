@@ -2,10 +2,20 @@
 /**
  * フロント側のCSSを記述する
  */
+
+/* ファーストビューの設定 */
 .p-fv {
   background-image: url('./../img/fv.jpg');
   background-size: cover;
   height: 100vh;
+}
+
+.p-fv__wrapper {
+  position: relative;
+  max-width: 1024px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .p-fv__box {
@@ -16,14 +26,14 @@
   height: 60vh;
   min-height: 600px;
   top: 0;
-  left: 100px;
+  left: -40px;
 }
 
 .p-fv__phrase {
   z-index: 100;
   position: absolute;
+  font-size: 1.5rem;
   color: #FFF;
   line-height: 3em;
   top: 300px;
-  left: 100px;
 }

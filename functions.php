@@ -35,10 +35,12 @@ add_action( 'enqueue_block_editor_assets', function() {
 add_action( 'hepere_home_under_header', function() {
   ?>
   <div class="p-fv">
-    <p class="p-fv__phrase">
-      HEPEREは初めての<br>ブログ運営・個人ビジネスに最適な<br>WordPressテーマです
-    </p>
-    <div class="p-fv__box"></div>
+    <div class="p-fv__wrapper">
+      <p class="p-fv__phrase">
+        HEPEREは初めての<br>ブログ運営・個人ビジネスに最適な<br>WordPressテーマです
+      </p>
+      <div class="p-fv__box"></div>
+    </div>
   </div>
   <?php
 });
