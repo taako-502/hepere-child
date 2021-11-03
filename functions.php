@@ -12,8 +12,8 @@ define( 'HEPERE_CHILD_THEME_URI', get_stylesheet_directory_uri() );
 add_action( 'wp_enqueue_scripts', function() {
   //CSS
   $dependency_style = array('font-awesome' , 'slick-theme', 'slick','hepere-app','hepere-style');
-  wp_enqueue_style( 'hepere-child-app', HEPERE_CHILD_THEME_URI.'/style/app.css', $dependency_style, "", true);
-  wp_enqueue_style( 'hepere-child-front', HEPERE_CHILD_THEME_URI.'/style/front.css', $dependency_style, "", true);
+  wp_enqueue_style( 'hepere-child-app', HEPERE_CHILD_THEME_URI.'/style/app.css', $dependency_style);
+  wp_enqueue_style( 'hepere-child-front', HEPERE_CHILD_THEME_URI.'/style/front.css', $dependency_style);
   wp_enqueue_style( 'hepere-child-style', HEPERE_CHILD_THEME_URI . '/style.css', $dependency_style);
   //JavaScript
   $dependency_script = array('jquery','hepere-main');
@@ -24,7 +24,7 @@ add_action( 'wp_enqueue_scripts', function() {
  * エディタ側にCSSをエンキュー
  */
 add_action( 'enqueue_block_editor_assets', function() {
-  wp_enqueue_style( 'hepere-child-editor', HEPERE_CHILD_THEME_URI.'/style/editor.css', array(), "", true);
-  wp_enqueue_style( 'hepere-child-front', HEPERE_CHILD_THEME_URI.'/style/app.css', array(), "", true);
-  wp_enqueue_style( 'hepere-child-style', HEPERE_CHILD_THEME_URI.'/style.css', array(), "", true);
+  wp_enqueue_style( 'hepere-child-editor', HEPERE_CHILD_THEME_URI.'/style/editor.css', array());
+  wp_enqueue_style( 'hepere-child-front', HEPERE_CHILD_THEME_URI.'/style/app.css', array());
+  wp_enqueue_style( 'hepere-child-style', HEPERE_CHILD_THEME_URI.'/style.css', array());
 });
