@@ -7,6 +7,11 @@
 header.l-header {
   position: absolute;
   background-color: transparent;
+  top: 20px;
+}
+
+header.l-header a {
+  color: white;
 }
 
 .l-header--series {
