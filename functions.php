@@ -51,3 +51,33 @@ add_action( 'hepere_page_under_header', function() {
   </div>
   <?php
 });
+
+/**
+ * 全ページの下側に挿入
+ */
+add_action( 'hepere_on_footer', function() {
+  ?>
+  <div class="c-footer-cta">
+    <div class="c-footer-cta__wrapper">
+      <img class="c-footer-cta__img" src="<?php echo HEPERE_CHILD_THEME_URI.'/img/footer_cta_logo.png' ?>" alt="">
+      <p class="c-footer-cta__p">
+        HEPEREは初めての<br>ブログ運営・個人ビジネスに最適な<br>WordPressテーマです
+      </p>
+      <table>
+        <tr>
+          <td>商品名</td>
+          <td class="u-font--white">WordPress テーマ HEPERE</td>
+        </tr>
+        <tr>
+          <td>販売価格</td>
+          <td>7,980円</td>
+        </tr>
+        <tr>
+          <td>販売元</td>
+          <td>---</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <?php
+});

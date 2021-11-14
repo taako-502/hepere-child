@@ -2,3 +2,18 @@
 /**
  * エディタ・フロント共通のCSSを記述する
  */
+.c-footer-cta {
+  min-height: 450px;
+  background-color: #E04F31;
+}
+
+.c-footer-cta__wrapper {
+  width: 100%;
+  max-width: 1128px;
+  min-height: 450px;
+  margin: 0 auto;
+  background-image: url('./../img/footer_cta_bg.png');
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: right 10px bottom;
+}
