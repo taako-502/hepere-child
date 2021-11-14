@@ -21,6 +21,8 @@ add_action( 'wp_enqueue_scripts', function() {
 
   if( is_front_page() ) {
     wp_enqueue_style( 'hepere-child-frontpage', HEPERE_CHILD_THEME_URI . '/style/frontpage.css', $dependency_style);
+  } else {
+    wp_enqueue_style( 'hepere-child-except-frontpage', HEPERE_CHILD_THEME_URI . '/style/except_frontpage.css', $dependency_style);
   }
 });
 
@@ -53,7 +55,17 @@ add_action( 'hepere_page_under_header', function() {
 });
 
 /**
- * 全ページの下側に挿入
+ * 全ページのヘッダー下に挿入
+ */
+add_action( 'hepere_under_header', function() {
+  if ( is_front_page() ) {
+    return;
+  }
+  echo '<hr class="c-under-header__hr">';
+});
+
+/**
+ * 全ページのフッター上側に挿入
  */
 add_action( 'hepere_on_footer', function() {
   ?>

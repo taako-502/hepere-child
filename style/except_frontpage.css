@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/**
+ * フロントページ以外で読み込まれるCSS
+ */
+.c-under-header__hr {
+  display: block;
+  width: 100%;
+  max-width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #F9F5F8;
+}
