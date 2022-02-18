@@ -22,8 +22,13 @@ add_action( 'wp_enqueue_scripts', function() {
 
   if( is_front_page() ) {
     wp_enqueue_style( 'hepere-child-frontpage', HEPERE_CHILD_THEME_URI . '/style/frontpage.css', $dependency_style);
+<<<<<<< HEAD
   } else if ( is_page('hepere-download') ){
     wp_enqueue_style( 'hepere-child-download', HEPERE_CHILD_THEME_URI . '/style/download.css', $dependency_style);
+=======
+  } else if ( is_page('hepere-download') ) {
+    wp_enqueue_style( 'hepere-child-downloadpage', HEPERE_CHILD_THEME_URI . '/style/download.css', $dependency_style);
+>>>>>>> cb979952465e11a9c18834dd95d4aea8cc0c423b
   } else {
     wp_enqueue_style( 'hepere-child-except-frontpage', HEPERE_CHILD_THEME_URI . '/style/except_frontpage.css', $dependency_style);
   }
