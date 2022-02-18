@@ -36,6 +36,7 @@ add_action( 'enqueue_block_editor_assets', function() {
   wp_enqueue_style( 'hepere-child-editor', HEPERE_CHILD_THEME_URI.'/style/editor.css', array());
   wp_enqueue_style( 'hepere-child-front', HEPERE_CHILD_THEME_URI.'/style/app.css', array());
   wp_enqueue_style( 'hepere-child-style', HEPERE_CHILD_THEME_URI.'/style.css', array());
+<<<<<<< HEAD
 });
 
 /**
@@ -55,6 +56,8 @@ add_action( 'hepere_page_under_header', function() {
     </div>
   </div>
   <?php
+=======
+>>>>>>> 7b164f3326780d752f29156d9da57431636ec5a8
 });
 
 /**
