@@ -17,10 +17,15 @@ add_action( 'wp_enqueue_scripts', function() {
   wp_enqueue_style( 'hepere-child-style', HEPERE_CHILD_THEME_URI . '/style.css', $dependency_style);
   //JavaScript
   $dependency_script = array('jquery','hepere-main');
-  wp_enqueue_script('hepere-child-main',HEPERE_CHILD_THEME_URI . '/js/main.js', $dependency_script);
+  wp_enqueue_script('slick-js', 'http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', $dependency_script, false, true);
+  wp_enqueue_script('main-js',HEPERE_CHILD_THEME_URI . '/js/main.js', $dependency_script, false, true);
 
   if( is_front_page() ) {
     wp_enqueue_style( 'hepere-child-frontpage', HEPERE_CHILD_THEME_URI . '/style/frontpage.css', $dependency_style);
+
+  } else if ( is_page('hepere-downloadpage') ){
+    wp_enqueue_style( 'hepere-child-download', HEPERE_CHILD_THEME_URI . '/style/download.css', $dependency_style);
+
   } else {
     wp_enqueue_style( 'hepere-child-except-frontpage', HEPERE_CHILD_THEME_URI . '/style/except_frontpage.css', $dependency_style);
   }
@@ -52,6 +57,7 @@ add_action( 'hepere_page_under_header', function() {
     </div>
   </div>
   <?php
+
 });
 
 /**
@@ -93,3 +99,5 @@ add_action( 'hepere_on_footer', function() {
   </div>
   <?php
 });
+
+
