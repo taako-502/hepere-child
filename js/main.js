@@ -1,6 +1,7 @@
-
-
-jQuery(document).ready(function($) {
+/**
+ * JavaScript
+ */
+ jQuery(document).ready(function($) {
   (function($) {
     //spヘッダーメニューの開閉
     $('.hamburger').click(function() {
@@ -42,21 +43,33 @@ jQuery(document).ready(function($) {
   })(jQuery);
 
   //機能紹介部分の「詳しく」「閉じる」ボタン
-  jQuery('.detail').toggle();
+  jQuery('.detail_content').toggle();
+  jQuery('.detail_button_close').toggle();
+
+  var functionsHeight =  jQuery('.functions').height();
 
   jQuery('.detail_button_open').click(function() {
-    $(this).parent().parent().next().toggle(500);
-    $(this).toggle(500);
-    $(this).next('.detail_button_close').toggle(500);
+    $(this).toggle();
+    $(this).parent().prev().children().toggle();
+    $(this).parent().parent().next('.wp-block-columns').toggle();
+    var functionsHeight =  $('.functions').height();
+    var redHeight =  functionsHeight - 150;
+    $('.bg-red-left').css('height', redHeight);
+    $('.bg-red-right').css('height', redHeight);
   });
+
   jQuery('.detail_button_close').click(function() {
-    $(this).parent().parent().next().toggle(500);
-    $(this).toggle(500);
-    $(this).prev('.detail_button_open').toggle(500);
+    $(this).toggle();
+    $(this).parent().next().children().toggle();
+    $(this).parent().parent().next('.wp-block-columns').toggle();
+    var functionsHeight =  $('.functions').height();
+    var redHeight =  functionsHeight - 150;
+    $('.bg-red-left').css('height', redHeight);
+    $('.bg-red-right').css('height', redHeight);
   });
 
   //スライドショー部分の設定
-  jQuery('#features-boxes-sp').slick({
+  jQuery('.features-boxes-sp').slick({
     responsive: [{
       breakpoint: 800,
       settings: {
@@ -69,6 +82,6 @@ jQuery(document).ready(function($) {
         arrow: true,
         autoplay: true
       }
-    }]
+    }],
   });
 });

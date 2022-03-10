@@ -2656,3 +2656,52 @@ img{
     right: 57px !important;
   }
 }
+
+
+#red{
+  background-color: red;
+  position: relative;
+  left: -120px;
+  height: 500px;
+  width: 100vw;
+  z-index: 0;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px){
+  .slick-slider{
+    display: none !important;
+  }
+}
+
+.wp-block-columns:not(.is-not-stacked-on-mobile) >.wp-block-column{
+  flex-grow: 0.5;
+}
+
+.mlminus5{
+  margin-left: -5vw;
+}
+
+.mw240{
+  min-width: 240px;
+  width: 33.3vw;
+}
+
+.bg-red-left{
+  background: red;
+  position: absolute;
+  left: 0;
+  height: 450px;
+  margin-top: 150px;
+}
+
+.bg-red-right{
+  background: red;
+  position: absolute;
+  right: 0;
+  height: 450px;
+  margin-top: 75px;  
+}
