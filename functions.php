@@ -62,7 +62,7 @@ add_action( 'hepere_page_under_header', function() {
     <li class="to_demosite-pc"><a href="/#demosite">デモサイト</a></li>
     <li class="to_QA-pc"><a href="/#QA">Q&A</a></li>
     <li class="to_top-2-pc"><a href="/#">お問い合わせ</a></li>
-    <div class="header-button-pc" onclick="location.href='/purchase.html'">
+    <div class="header-button-pc" onclick="location.href='/hepere-download'">
       <p class="purchase-text">購入する</p>
     </div>
   </nav>
@@ -90,14 +90,14 @@ add_action( 'hepere_page_under_header', function() {
     <li class="to_demosite-sp">デモサイト</li>
     <li class="to_QA-sp">Q&A</li>
     <li class="contact-sp"  onclick="location.href='/#top-2-message'">お問い合わせ</li>
-    <div class="header-button-sp" onclick="location.href='/purchase.html'">
+    <div class="header-button-sp" onclick="location.href='/hepere-download'">
       <p class="purchase">購入する</p>
     </div>
   </nav>
   <!--SP用ヘッダーボタン部分-->
   <div class="sp_header">
     <div class="sp_header_button">
-      <a href="/purchase.html"><i class="fas fa-lg fa-shopping-cart fa-flip-horizontal"></i></a>
+      <a href="/hepere-download"><i class="fas fa-lg fa-shopping-cart fa-flip-horizontal"></i></a>
       <div class="hamburger" class="hamburger">
         <span></span>
         <span></span>
@@ -148,7 +148,7 @@ add_action( 'hepere_on_footer', function() {
           <br>（Gutenberg対応）
           <br>価格　・・・　7980円
         </p>
-        <div class="footer-button" onclick="location.href='/purchase.html'">
+        <div class="footer-button" onclick="location.href='/hepere-download'">
           <p>購入する</p>
         </div>
       </div>
@@ -177,7 +177,7 @@ add_action( 'hepere_on_footer', function() {
             <p>販売元</p>
           </div>
         </div>
-        <div class="footer-button" onclick="location.href='/purchase.html'">
+        <div class="footer-button" onclick="location.href='/hepere-download'">
           <p>購入する</p>
         </div>
       </div>

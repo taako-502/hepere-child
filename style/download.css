@@ -1417,3 +1417,15 @@ nav.globalMenuSp.active {
     width: 40% !important;
   }
 }
+
+.wp-block-button__link{
+  pointer-events: none;
+}
+
+.pointer-events-none{
+  pointer-events: none;
+}
+
+.pointer-events-on{
+  pointer-events: auto !important;
+}
