@@ -46,27 +46,22 @@ add_action( 'hepere_page_under_header', function() {
     return;
   }
   ?>
-<div class="top">
-
-<!--pc用ヘッダー-->
-<div class="header-pc">
-  <div class="header-logo">
-    <h1 class="h1">HEPERE</h1>
-    <div class="red">
+  <div class="p-fv">
+    <div class="p-fv__wrapper">
+      <p class="p-fv__phrase">
+        HEPEREは初めての<br>ブログ運営・個人ビジネスに最適な<br>WordPressテーマです
+      </p>
+      <div class="p-fv__box"></div>
+    </div>
+    <div id="scroll-pc">
+      <p>scroll</p>
+      <span>▽</span>
     </div>
   </div>
-  <nav class="header-menu-pc">
-    <li class="to_features-pc"><a href="/#features">特徴</a></li>
-    <li class="to_function-pc"><a href="/#function">機能紹介</a></li>
-    <li class="to_sitespeed-pc"><a href="/#sitespeed">サイトスピード</a></li>
-    <li class="to_demosite-pc"><a href="/#demosite">デモサイト</a></li>
-    <li class="to_QA-pc"><a href="/#QA">Q&A</a></li>
-    <li class="to_top-2-pc"><a href="/#">お問い合わせ</a></li>
-    <div class="header-button-pc" onclick="location.href='/hepere-download'">
-      <p class="purchase-text">購入する</p>
-    </div>
-  </nav>
-</div>
+
+
+<div class="top">
+
 
   <!--sp用ヘッダー-->
 <div class="header-sp">
@@ -114,8 +109,8 @@ add_action( 'hepere_page_under_header', function() {
     <br>WordPressテーマです。
   </h2>
 </div>
-<!--スクロール（PC）-->
-<div id="scroll-pc">
+<!--スクロール（SP）-->
+<div id="scroll-sp">
   <p>scroll</p>
   <span>▽</span>
 </div>

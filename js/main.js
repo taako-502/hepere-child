@@ -18,61 +18,68 @@
   })(jQuery);
 
   //ヘッダー、スクロールの移動先を指定
-  (function($) {
-    $('#scroll-pc').click(function() {
+  jQuery(document).ready(function($) {
+    jQuery('#scroll-pc').click(function() {
       $(window).scrollTop($('#top-2-message').position().top);
     });
-    $('#scroll-sp').click(function() {
+    jQuery('#scroll-sp').click(function() {
       $(window).scrollTop($('#top-2-message').position().top);
     });
-    $('#to_features').click(function() {
+    jQuery('#to_features').click(function() {
       $(window).scrollTop($('#features').position().top);
     });
-    $('#to_function').click(function() {
+    jQuery('#to_function').click(function() {
       $(window).scrollTop($('#function').position().top);
     });
-    $('#to_sitespeed').click(function() {
+    jQuery('#to_sitespeed').click(function() {
       $(window).scrollTop($('#sitespeed').position().top);
     });
-    $('#to_demosite').click(function() {
+    jQuery('#to_demosite').click(function() {
       $(window).scrollTop($('#demosite').position().top);
     });
-    $('#to_QA').click(function() {
+    jQuery('#to_QA').click(function() {
       $(window).scrollTop($('#QA').position().top);
     });
-  })(jQuery);
+  });
 
   //機能紹介部分の「詳しく」「閉じる」ボタン
-  jQuery('.detail_content').toggle();
-  jQuery('.detail_button_close').toggle();
+  jQuery(document).ready(function() {
+    jQuery('.detail_content').toggle();
+    jQuery('.detail_button_close').toggle();
+  });
 
   var functionsHeight =  jQuery('.functions').height();
 
-  jQuery('.detail_button_open').click(function() {
-    $(this).toggle();
-    $(this).parent().prev().children().toggle();
-    $(this).parent().parent().next('.wp-block-columns').toggle();
+  jQuery(document).ready(function() {
+    jQuery('.detail_button_open').click(function() {
+    jQuery(this).toggle();
+    jQuery(this).parent().prev().children().toggle();
+    jQuery(this).parent().parent().next('.wp-block-columns').toggle();
     var functionsHeight =  $('.functions').height();
     var redHeight =  functionsHeight - 150;
-    $('.bg-red-left').css('height', redHeight);
-    $('.bg-red-right').css('height', redHeight);
-  });
+    jQuery('.bg-red-left').css('height', redHeight);
+    jQuery('.bg-red-right').css('height', redHeight);
+    });
+  });  
 
-  jQuery('.detail_button_close').click(function() {
-    $(this).toggle();
-    $(this).parent().next().children().toggle();
-    $(this).parent().parent().next('.wp-block-columns').toggle();
-    var functionsHeight =  $('.functions').height();
+  jQuery(document).ready(function() {
+    jQuery('.detail_button_close').click(function() {
+    jQuery(this).toggle();
+    jQuery(this).parent().next().children().toggle();
+    jQuery(this).parent().parent().next('.wp-block-columns').toggle();
+    var functionsHeight =  jQuery('.functions').height();
     var redHeight =  functionsHeight - 150;
-    $('.bg-red-left').css('height', redHeight);
-    $('.bg-red-right').css('height', redHeight);
+    jQuery('.bg-red-left').css('height', redHeight);
+    jQuery('.bg-red-right').css('height', redHeight);
+    });
   });
 
   //スライドショー部分の設定
-  jQuery('.features-boxes-sp').slick({
-    responsive: [{
-      breakpoint: 800,
-      settings: {
+  jQuery(document).ready(function() {
+    jQuery('.features-boxes-sp').slick({
+      responsive: [{
+       breakpoint: 900,
+       settings: {
         variableWidth: true,
         centerMode: true,
         centerPadding: '100px',
@@ -81,7 +88,9 @@
         dots: true,
         arrow: true,
         autoplay: true
-      }
-    }],
+        }
+      }],
+    });
   });
-});
+ });
+
