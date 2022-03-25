@@ -148,7 +148,7 @@ add_action( 'hepere_on_footer', function() {
         </div>
       </div>
       <div class="footer-image">
-        <img class="footer-img" src="img/bear.png" alt="">
+      <img class="footer-img" src="https://hepere.com/wp-content/uploads/2022/03/bear.png" alt="">
       </div>
     </div>
   </div>

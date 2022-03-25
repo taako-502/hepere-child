@@ -2282,7 +2282,7 @@ nav.globalMenuSp.active {
 }
 
 .footer-sp {
-  background-image: url(http://heperelocal.local/wp-content/uploads/2022/02/bear.png);
+  background-image: url('./../img/footer_cta_bg.png');
   background-size: 100vw auto; 
   background-repeat: no-repeat; 
   background-position:-30vw bottom;
@@ -2414,14 +2414,10 @@ nav.globalMenuSp.active {
   .footer-pc {
     display: none;
   }
-
-  .footer-pc {
-    display: none;
-  }
 }
 
 .top{
-  background-image: url('http://heperelocal.local/wp-content/uploads/2022/02/bg_header.png');
+  background-image: url('./../img/fv.jpg');
   height: 1020px !important;
   background-repeat: no-repeat; 
   background-size: cover; 
