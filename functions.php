@@ -48,6 +48,9 @@ add_action( 'hepere_page_under_header', function() {
   ?>
   <div class="p-fv">
     <div class="p-fv__wrapper">
+      <div class="l-header--serial">
+        <a class="l-header__description l-header__description--serial" href="https://hepere.com/"><?php bloginfo( 'description' ); ?></a>
+        </div>
       <p class="p-fv__phrase">
         HEPEREは初めての<br>ブログ運営・個人ビジネスに最適な<br>WordPressテーマです
       </p>
@@ -57,64 +60,11 @@ add_action( 'hepere_page_under_header', function() {
       <p>scroll</p>
       <span>▽</span>
     </div>
-  </div>
-
-
-<div class="top">
-
-
-  <!--sp用ヘッダー-->
-<div class="header-sp">
-  <div class="header-logo-sp">
-    <h1 class="title-logo">HEPERE</h1>
-  </div>
-  <nav class="globalMenuSp hidden">
-    <ul>
-        <li><a href="/#features">特徴</a></li>
-        <li><a href="/#function">機能紹介</a></li>
-        <li><a href="/#sitespeed">サイトスピード</a></li>
-        <li><a href="/#demosite">デモサイト</a></li>
-        <li><a href="/#QA">Q&A</a></li>
-        <li><a href="/#top-2-message">お問い合わせ</a></li>
-    </ul>
-  </nav>
-  <nav class="header-menu-sp">
-    <li class="to_features-sp">特徴</li>
-    <li class="to_function-sp">機能紹介</li>
-    <li class="to_sitespeed-sp">サイトスピード</li>
-    <li class="to_demosite-sp">デモサイト</li>
-    <li class="to_QA-sp">Q&A</li>
-    <li class="contact-sp"  onclick="location.href='/#top-2-message'">お問い合わせ</li>
-    <div class="header-button-sp" onclick="location.href='/hepere-download'">
-      <p class="purchase">購入する</p>
-    </div>
-  </nav>
-  <!--SP用ヘッダーボタン部分-->
-  <div class="sp_header">
-    <div class="sp_header_button">
-      <a href="/hepere-download"><i class="fas fa-lg fa-shopping-cart fa-flip-horizontal"></i></a>
-      <div class="hamburger" class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <div id="scroll-sp">
+      <p>scroll</p>
+      <span>▽</span>
     </div>
   </div>
-</div>
-<div class="header-content">
-  <div class="header_red">
-  </div>
-  <h2 class="header_h2">HEPEREは初めての
-    <br>ブログ運営・個人ビジネスに最適な
-    <br>WordPressテーマです。
-  </h2>
-</div>
-<!--スクロール（SP）-->
-<div id="scroll-sp">
-  <p>scroll</p>
-  <span>▽</span>
-</div>
-</div>
   <?php
 });
 
@@ -133,56 +83,19 @@ add_action( 'hepere_under_header', function() {
  */
 add_action( 'hepere_on_footer', function() {
   ?>
-    <!--pcフッター部分-->
-    <div class="footer-pc">
-    <h2 class="footer-pc-h2">はじめての有料テーマならHEPEREが最適です</h2>
-    <div class="footer-pc-box1"></div>
-    <div class="footer-pc-box2">
-      <div class="footer-text-pc">
-        <p>WordPressテーマ「HEPERE」
-          <br>（Gutenberg対応）
-          <br>価格　・・・　7980円
-        </p>
-        <div class="footer-button" onclick="location.href='/hepere-download'">
-          <p>購入する</p>
-        </div>
-      </div>
-      <div class="footer-image">
-      <img class="footer-img" src="<?php echo get_stylesheet_directory_uri();?>/img/footer_cta_bg.png" alt="">
-      </div>
+<div class="c-footer-cta">
+  <div class="c-footer-cta__wrapper">
+    <h3 class="c-footer-cta-top">初めての有料テーマならHEPEREが最適です</h3>
+    <div class="c-footer-cta__text">
+      <p>WordPressテーマ「HEPERE」</p>
+      <p>（Gutenberg対応）</p>
+      <p>価格　・・・　7980円</p>
+    </div>
+    <div class="footer-button" onclick="location.href='/hepere-download'">
+      <p>購入する</p>
     </div>
   </div>
-  <!--spフッター部分-->
-  <div class="footer-sp">
-    <h2 class="footer-sp-h2">HEPERE</h2>
-    <div class="footer-sp-box">
-      <div class="footer-text">
-        <p>あなたの個性をプログラミングなしで<br class="sp_more:hidden">表現できる
-          <br>WordPressのテーマ
-        </p>
-        <div class="footer-sp-box-2">
-          <div>
-            <p>商品名</p>
-            <p>販売価格</p>
-            <p>販売元</p>
-          </div>
-          <div class="footer-sp-box3">
-            <p class="text-white">WordPressテーマ HEPERE</p>
-            <p>7,980円（税込）</p>
-            <p>販売元</p>
-          </div>
-        </div>
-        <div class="footer-button" onclick="location.href='/hepere-download'">
-          <p>購入する</p>
-        </div>
-      </div>
-    </div>
-
-    </div>
-    <div class="copyright">
-      <p class="copyright-text">Copyright © 2021 HEPERE Powered by HEPERE.</p>
-    </div>
-  </div>
+</div>
   <?php
 });
 
