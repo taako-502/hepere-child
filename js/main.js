@@ -46,23 +46,23 @@
       jQuery(this).parent().parent().next('.wp-block-columns').toggle('slow');
 
       //赤い帯部分の長さを調整
-        let functionsHeight = jQuery('.functions').height() - 300;
+      let functionsHeight = jQuery('.functions').height() - 300;
 
-        let functionsPadding = Number(jQuery('#features-boxes-sp').css('padding-bottom').replace('px', ''));
+      let functionsPadding = Number(jQuery('#features-boxes-sp').css('padding-bottom').replace('px', ''));
 
-        let functionsMargin = Number(jQuery('.bg-red-left').css('margin-top').replace('px', ''));
+      let functionsMargin = Number(jQuery('.bg-red-left').css('margin-top').replace('px', ''));
 
-        let minusMarginPC = Number(jQuery('#features-boxes-pc').css('margin-top').replace('px', ''));
+      let minusMarginPC = Number(jQuery('#features-boxes-pc').css('margin-top').replace('px', ''));
 
-        let minusMarginMD = Number(jQuery('#features-boxes-md').css('margin-top').replace('px', ''));
+      let minusMarginMD = Number(jQuery('#features-boxes-md').css('margin-top').replace('px', ''));
 
-        let minusMarginSP = Number(jQuery('#features-boxes-sp').css('margin-top').replace('px', ''));
+      let minusMarginSP = Number(jQuery('#features-boxes-sp').css('margin-top').replace('px', ''));
+      
+      let greyHeightPC = Number(jQuery('.bg-grey-pc').css('height').replace('px', ''));
 
-        let greyHeightPC = Number(jQuery('.bg-grey-pc').css('height').replace('px', ''));
+      let greyHeightMD = Number(jQuery('.bg-grey-md').css('height').replace('px', ''));
 
-        let greyHeightMD = Number(jQuery('.bg-grey-md').css('height').replace('px', ''));
-
-        let greyHeightSP = Number(jQuery('.bg-grey-sp').css('height').replace('px', ''));
+      let greyHeightSP = Number(jQuery('.bg-grey-sp').css('height').replace('px', ''));
 
         
 
