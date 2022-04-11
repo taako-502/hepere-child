@@ -110,10 +110,6 @@ header.l-header a {
   margin-top: 27px;
   margin-bottom: 27px;
   }
-  
-.c-top-scroll-btn > a{
-  border-radius: 50%;
-  }
 
   .smb-faq{
     margin-bottom: 50px;
@@ -1036,11 +1032,6 @@ margin-bottom: 70px !important;
 margin-bottom: 0 !important;
 }
 
-a{
-color: white !important;
-}
-
-
 .slick-dots{
  position: relative !important;
  top: 20px !important;
@@ -1319,6 +1310,7 @@ img{
 }
 
 .l-header-nav{
+  align-items: center;
   margin-top: -30px;
 }
 
@@ -1346,10 +1338,6 @@ iframe{
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-.fixed > a{
-  border-radius: 50%;
 }
 
 .c-footer-cta__img{
@@ -1428,7 +1416,7 @@ html {
 
 .l-header--serial .l-header__description {
   position: absolute;
-  z-index: 100;
+  z-index: 200;
   color: white;
 }
 
