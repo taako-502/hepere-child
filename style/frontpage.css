@@ -667,7 +667,7 @@ header.l-header a {
 
 }
 
-#features-boxes-pc {
+.wp-block-columns.features-boxes-pc {
   position: relative;
   margin-top: -1700px;
   margin-bottom: 0 !important;
@@ -679,7 +679,7 @@ header.l-header a {
 }
 
 @media (max-width: 900px) {
-  #features-boxes-pc {
+  .features-boxes-pc {
     display: none;
   }
 }
@@ -1396,8 +1396,10 @@ table{
   margin-left: 40px !important;
 }
 
-html {
+#scroll-pc, #scroll-sp {
+  height: 60px;
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 :root {
