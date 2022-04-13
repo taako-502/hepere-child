@@ -286,6 +286,7 @@ header.l-header a {
   display: flex;
 }
 
+/* スライダー */
 .slick-prev, .slick-next {
   display: none !important;
 }
@@ -355,6 +356,7 @@ header.l-header a {
   }
 }
 
+/* サイトスピード */
 .sitespeed-h2 {
   display: block;
   width: 347px;
@@ -411,6 +413,7 @@ header.l-header a {
   }
 }
 
+/* デモサイト */
 .demosite-h2 {
   width: 347px;
   border-bottom-width: 1px;
@@ -457,6 +460,7 @@ header.l-header a {
   }
 }
 
+/* FAQ */
 #QA {
   margin-top: 46px;
   margin-bottom: 64px;
