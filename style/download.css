@@ -1,5 +1,3 @@
-
-
 *, ::before, ::after {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
@@ -58,13 +56,13 @@
 }
 
 @media screen and (max-width: 600px) {
-  .table-content{
+  .table-content {
     left: 20px;
   }
 }
 
-@media screen and (min-width: 800px){
-  .table-content{
+@media screen and (min-width: 800px) {
+  .table-content {
     position: relative;
     left: -20px;
   }
@@ -130,13 +128,13 @@
   --tw-text-opacity: 1;
 }
 
-.checkbox{
+.checkbox {
   transform: scale(2);
 }
 
-.top-text-2-red{
+.top-text-2-red {
   --tw-text-opacity: 1;
-  color: rgba(248, 113, 113, var(--tw-text-opacity));	
+  color: rgba(248, 113, 113, var(--tw-text-opacity));
 }
 
 .purchase-button-text {
@@ -174,7 +172,7 @@
   margin-left: 20px;
 }
 
-.rights-li-top{
+.rights-li-top {
   margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 20px;
@@ -218,11 +216,11 @@
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   text-align: center;
   line-height: 44px;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 800px){
-  .footer-button{
+@media screen and (max-width: 800px) {
+  .footer-button {
     margin-top: 30px;
     margin-bottom: 50px;
   }
@@ -233,15 +231,15 @@
   color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 
-.c-top-scroll-btn{
+.c-top-scroll-btn {
   display: none;
 }
 
-.c-top-scroll-btn a{
+.c-top-scroll-btn a {
   border-radius: 50%;
 }
 
-.has-before-icon :before{
+.has-before-icon :before {
   font-family: "Font Awesome 5 Free";
   content: "\f07a";
   color: white;
@@ -249,61 +247,61 @@
   padding-right: 10px;
 }
 
-.wp-block-media-text__content{
+.wp-block-media-text__content {
   margin-bottom: 60px;
 }
 
-.ml60{
+.ml60 {
   margin-left: 60px !important;
 }
 
-.minwidth100{
+.minwidth100 {
   min-width: 100px !important;
 }
 
-.padding_table{
+.padding_table {
   padding: 5px 10px !important;
 }
 
-.l-sidebar, .c-widgets{
+.l-sidebar, .c-widgets {
   display: none;
 }
 
-.wp-block-flexible-table-block-table.wp-block-flexible-table-block-table>table tr td{
+.wp-block-flexible-table-block-table.wp-block-flexible-table-block-table>table tr td {
   border-color: #e5e7eb;
 }
 
-.pb30{
+.pb30 {
   padding-bottom: 30px;
 }
 
-.span-color{
+.span-color {
   color: #d73200;
 }
 
-.table-left{
+.table-left {
   width: 25% !important;
 }
 
-@media screen and (max-width: 490px){
-  .table-left{
+@media screen and (max-width: 490px) {
+  .table-left {
     width: 40% !important;
   }
 }
 
-.wp-block-button__link{
+.wp-block-button__link {
   pointer-events: none;
 }
 
-.pointer-events-none{
+.pointer-events-none {
   pointer-events: none;
 }
 
-.pointer-events-on{
+.pointer-events-on {
   pointer-events: auto !important;
 }
 
-.c-footer-cta__img{
+.c-footer-cta__img {
   display: block;
   margin-top: 40px;
   margin-left: auto;
@@ -311,18 +309,18 @@
   text-align: center;
 }
 
-.c-footer-cta__p{
+.c-footer-cta__p {
   margin-top: 40px;
   text-align: center;
 }
 
-.c-footer-cta__text{
+.c-footer-cta__text {
   margin-top: 70px;
   margin-left: 10%;
   line-height: 40px;
 }
 
-.c-footer-cta-top{
+.c-footer-cta-top {
   font-size: 24px;
   width: 500px;
   display: block;
@@ -335,14 +333,15 @@
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 900px){
-  .c-footer-cta-top{
+@media screen and (max-width: 900px) {
+  .c-footer-cta-top {
     padding-top: 60px;
     margin-top: 0;
   }
 }
-@media screen and (max-width: 490px){
-  .c-footer-cta-top{
+
+@media screen and (max-width: 490px) {
+  .c-footer-cta-top {
     font-size: 16px;
     width: 330px;
   }
@@ -360,18 +359,18 @@
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
   text-align: center;
   line-height: 44px;
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 900px){
-  .footer-button{
+@media screen and (max-width: 900px) {
+  .footer-button {
     margin-top: 50px;
     margin-bottom: 50px;
   }
 }
 
-@media screen and (max-width: 900px){
-  .nav-link{
+@media screen and (max-width: 900px) {
+  .nav-link {
     padding: 1em !important;
   }
 }
