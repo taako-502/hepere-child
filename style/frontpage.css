@@ -1213,14 +1213,6 @@ header.l-header a {
   }
 }
 
-#red {
-  background-color: red;
-  position: relative;
-  left: -120px;
-  height: 500px;
-  z-index: 0;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1307,18 +1299,6 @@ header.l-header a {
   .bg-red-left-sp, .bg-red-right-sp {
     display: none;
   }
-}
-
-#player {
-  display: flex !important;
-  justify-content: center !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
-#player {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .center {
@@ -1498,4 +1478,25 @@ header.l-header a {
   .bg-grey-sp {
     height: 1700px;
   }
+}
+
+/* 未使用 */
+#player {
+  display: flex !important;
+  justify-content: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+#player {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#red {
+  background-color: red;
+  position: relative;
+  left: -120px;
+  height: 500px;
+  z-index: 0;
 }
