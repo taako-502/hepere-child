@@ -35,6 +35,84 @@ header.l-header a {
   color: white;
 }
 
+.l-header__inner {
+  padding: 0 !important;
+}
+
+.l-header-logo--frontpage {
+  margin-left: 40px !important;
+}
+
+.l-header--serial .l-header__description {
+  position: absolute;
+  z-index: 200;
+  color: white;
+}
+
+/* ヘッダーのナビゲーション部分 */
+.l-header-nav {
+  align-items: center;
+  margin-top: -30px;
+}
+
+.nav-link {
+  padding: 1.5em !important;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-link {
+    padding: 1em !important;
+  }
+}
+
+/* ヘッダースクロールボタン */
+#scroll-pc, #scroll-sp {
+  height: 60px;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+#scroll-pc {
+  position: relative;
+  top: 85vh;
+  display: block;
+  width: 50px;
+  padding-bottom: 15px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+  #scroll-pc {
+    top: -5vh;
+    display: none;
+  }
+}
+
+#scroll-sp {
+  position: absolute;
+  top: 100vh;
+  width: 100%;
+  display: block;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 246, 246, var(--tw-bg-opacity));
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 70px;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+}
+
+@media (min-width: 900px) {
+  #scroll-sp {
+    display: none;
+  }
+}
+
 /* ファーストビューの設定 */
 .p-fv {
   background-image: url('./../img/fv.jpg');
@@ -141,48 +219,6 @@ header.l-header a {
 
 .smb-faq__item__question, .smb-faq__item__answer {
   justify-content: center !important;
-}
-
-/* ヘッダー部分 */
-#scroll-pc {
-  position: relative;
-  top: 85vh;
-  display: block;
-  width: 50px;
-  padding-bottom: 15px;
-  text-align: center;
-  cursor: pointer;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media screen and (max-width: 900px) {
-  #scroll-pc {
-    top: -5vh;
-    display: none;
-  }
-}
-
-#scroll-sp {
-  position: absolute;
-  top: 100vh;
-  width: 100%;
-  display: block;
-  --tw-bg-opacity: 1;
-  background-color: rgba(249, 246, 246, var(--tw-bg-opacity));
-  padding-top: 30px;
-  padding-bottom: 30px;
-  margin-bottom: 70px;
-  text-align: center;
-  cursor: pointer;
-  color: black;
-}
-
-@media (min-width: 900px) {
-  #scroll-sp {
-    display: none;
-  }
 }
 
 /* フッター部分 */
@@ -1324,25 +1360,6 @@ header.l-header a {
   }
 }
 
-.l-header-nav {
-  align-items: center;
-  margin-top: -30px;
-}
-
-.nav-link {
-  padding: 1.5em !important;
-}
-
-@media screen and (max-width: 900px) {
-  .nav-link {
-    padding: 1em !important;
-  }
-}
-
-.l-header__inner {
-  padding: 0 !important;
-}
-
 @media screen and (max-width: 900px) {
   .spmt220 {
     margin-top: 220px !important;
@@ -1395,16 +1412,6 @@ header.l-header a {
   }
 }
 
-.l-header-logo--frontpage {
-  margin-left: 40px !important;
-}
-
-#scroll-pc, #scroll-sp {
-  height: 60px;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-}
-
 @media screen and (max-width: 782px) {
   .fontawesome-i2svg-active {
     margin-top: 0 !important;
@@ -1413,12 +1420,6 @@ header.l-header a {
 
 .l-footer.open, .contents.open {
   transform: translateX(0%) !important;
-}
-
-.l-header--serial .l-header__description {
-  position: absolute;
-  z-index: 200;
-  color: white;
 }
 
 .functions {
