@@ -93,18 +93,19 @@ header.l-header a {
 }
 
 #scroll-sp {
+  display: block;
   position: absolute;
+  cursor: pointer;
   top: 100vh;
   width: 100%;
-  display: block;
-  --tw-bg-opacity: 1;
-  background-color: rgba(249, 246, 246, var(--tw-bg-opacity));
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-bottom: 70px;
-  text-align: center;
-  cursor: pointer;
+  margin-top: 0 !important;
+  margin-bottom: 70px !important;
   color: black;
+  text-align: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 246, 246, var(--tw-bg-opacity));
 }
 
 @media (min-width: 900px) {
@@ -911,22 +912,6 @@ header.l-header a {
   }
 }
 
-#scroll-sp {
-  display: block;
-  --tw-bg-opacity: 1;
-  background-color: rgba(249, 246, 246, var(--tw-bg-opacity));
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-  cursor: pointer;
-}
-
-@media (min-width: 900px) {
-  #scroll-sp {
-    display: none;
-  }
-}
-
 @media (min-width: 900px) {
   .sm_more\:hidden {
     display: none;
@@ -1079,12 +1064,6 @@ header.l-header a {
   margin-bottom: 0 !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-}
-
-#scroll-sp {
-  cursor: pointer;
-  margin-top: 0 !important;
-  margin-bottom: 70px !important;
 }
 
 #features, .footer-pc {
