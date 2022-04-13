@@ -31,6 +31,21 @@ iframe {
   margin-bottom: 27px;
 }
 
+.l-sidebar, aside, .c-breadcrumb, .p-article-date {
+  display: none !important;
+}
+
+.copyright, .footer-sp, .l-main, .function_box, .top {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#features, .footer-pc {
+  margin-bottom: 0 !important;
+}
+
 /* ヘッダー */
 @media screen and (min-width: 767px) {
   header.l-header {
@@ -842,15 +857,6 @@ header.l-header a {
   margin-bottom: 64px;
 }
 
-.function_red_right {
-  display: none;
-  margin-bottom: 150px;
-  height: 500px;
-  width: 5.8vw;
-  --tw-bg-opacity: 1;
-  background-color: rgba(240, 39, 0, var(--tw-bg-opacity));
-}
-
 .movie {
   width: 42vw;
   margin-left: auto;
@@ -872,15 +878,6 @@ header.l-header a {
   .top-2 {
     padding-top: 40px;
   }
-}
-
-.function_red_left {
-  display: none;
-  margin-bottom: 150px;
-  height: 500px;
-  width: 5.8vw;
-  --tw-bg-opacity: 1;
-  background-color: rgba(240, 39, 0, var(--tw-bg-opacity));
 }
 
 .footer-sp {
@@ -1001,19 +998,6 @@ header.l-header a {
   margin-top: 44px;
 }
 
-#function {
-  margin-bottom: 95px;
-  border-radius: 50px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  padding-top: 36px;
-  margin-bottom: 95px;
-  border-radius: 50px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  padding-top: 36px;
-}
-
 @media (max-width: 900px) {
   .top-2-text-content-sp {
     margin-left: auto;
@@ -1040,21 +1024,6 @@ header.l-header a {
   .sp_more\:hidden {
     display: none;
   }
-}
-
-.l-sidebar, aside, .c-breadcrumb, .p-article-date {
-  display: none !important;
-}
-
-.copyright, .footer-sp, .l-main, .function_box, .top {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-#features, .footer-pc {
-  margin-bottom: 0 !important;
 }
 
 .slick-dots {
@@ -1220,7 +1189,53 @@ header.l-header a {
   }
 }
 
+/* 機能の紹介 */
+#function {
+  margin-bottom: 95px;
+  border-radius: 50px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding-top: 36px;
+  margin-bottom: 95px;
+  border-radius: 50px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding-top: 36px;
+}
+
+.functions {
+  position: relative;
+  z-index: 100;
+  background-color: white;
+  margin-top: -1000px !important;
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .functions {
+    margin-top: -1000px !important;
+  }
+}
+
 /* 機能紹介の赤い帯部分 */
+.function_red_right {
+  display: none;
+  margin-bottom: 150px;
+  height: 500px;
+  width: 5.8vw;
+  --tw-bg-opacity: 1;
+  background-color: rgba(240, 39, 0, var(--tw-bg-opacity));
+}
+
+.function_red_left {
+  display: none;
+  margin-bottom: 150px;
+  height: 500px;
+  width: 5.8vw;
+  --tw-bg-opacity: 1;
+  background-color: rgba(240, 39, 0, var(--tw-bg-opacity));
+}
+
 .bg-red-left {
   background: red;
   position: absolute;
@@ -1366,20 +1381,6 @@ header.l-header a {
 
 .l-footer.open, .contents.open {
   transform: translateX(0%) !important;
-}
-
-.functions {
-  position: relative;
-  z-index: 100;
-  background-color: white;
-  margin-top: -1000px !important;
-  border-radius: 50px;
-}
-
-@media screen and (max-width: 900px) {
-  .functions {
-    margin-top: -1000px !important;
-  }
 }
 
 .is-type-video {
