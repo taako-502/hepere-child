@@ -3,6 +3,31 @@
 /**
  * フロントページのCSSを記述する
  */
+
+/* カスタムフィールド */
+:root {
+  --sp-top-margin: 0 !important;
+}
+
+/* ベース */
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  margin-top: 50px;
+  margin-left: 10%;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ヘッダー */
 @media screen and (min-width: 767px) {
   header.l-header {
@@ -95,7 +120,6 @@ header.l-header a {
   }
 }
 
-/* */
 .wp-block-column h2 {
   text-align: center;
 }
@@ -1156,11 +1180,6 @@ header.l-header a {
   margin-right: auto;
 }
 
-img {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .smb-faq__item {
   border: 0px solid transparent;
   border-top: 0px solid transparent !important;
@@ -1332,12 +1351,6 @@ img {
   }
 }
 
-iframe {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .c-footer-cta__img {
   display: block;
   margin-top: 40px;
@@ -1349,13 +1362,6 @@ iframe {
 .c-footer-cta__p {
   margin-top: 40px;
   text-align: center;
-}
-
-table {
-  margin-top: 50px;
-  margin-left: 10%;
-  border-collapse: separate;
-  border-spacing: 10px;
 }
 
 .c-footer-cta__text {
@@ -1399,10 +1405,6 @@ table {
   height: 60px;
   scroll-behavior: smooth;
   overflow-y: scroll;
-}
-
-:root {
-  --sp-top-margin: 0 !important;
 }
 
 @media screen and (max-width: 782px) {
