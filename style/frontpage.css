@@ -3,12 +3,6 @@
 /**
  * フロントページのCSSを記述する
  */
-
-/* カスタムフィールド */
-:root {
-  --sp-top-margin: 0 !important;
-}
-
 /* ベース */
 img {
   margin-left: auto;
