@@ -22,6 +22,15 @@ iframe {
   margin-right: auto;
 }
 
+.wp-block-column h2 {
+  text-align: center;
+}
+
+.wp-block-group h2 {
+  margin-top: 27px;
+  margin-bottom: 27px;
+}
+
 /* ヘッダー */
 @media screen and (min-width: 767px) {
   header.l-header {
@@ -191,35 +200,6 @@ header.l-header a {
     font-size: 0.8rem;
     top: 50vh;
   }
-}
-
-.wp-block-column h2 {
-  text-align: center;
-}
-
-.sm\:hidden {
-  @media screen and (max-width: 900px) {
-    display: none;
-  }
-}
-
-.wp-block-group h2 {
-  margin-top: 27px;
-  margin-bottom: 27px;
-}
-
-.smb-faq {
-  margin-bottom: 50px;
-}
-
-.smb-faq__item__question__body, .smb-faq__item__answer__body {
-  line-height: 36px;
-  max-width: 900px;
-  font-size: 18px !important;
-}
-
-.smb-faq__item__question, .smb-faq__item__answer {
-  justify-content: center !important;
 }
 
 /* フッター部分 */
@@ -566,6 +546,21 @@ header.l-header a {
   font-size: 21px;
 }
 
+.smb-faq {
+  margin-bottom: 50px;
+}
+
+.smb-faq__item__question__body, .smb-faq__item__answer__body {
+  line-height: 36px;
+  max-width: 900px;
+  font-size: 18px !important;
+}
+
+.smb-faq__item__question, .smb-faq__item__answer {
+  justify-content: center !important;
+}
+
+
 .footer-pc-h2 {
   display: block;
   text-align: center;
@@ -840,14 +835,6 @@ header.l-header a {
   .demosite-text {
     width: 70vw;
   }
-}
-
-.title-logo {
-  position: relative;
-  z-index: 6;
-  margin-top: -7px;
-  --tw-text-opacity: 1;
-  color: rgba(240, 39, 0, var(--tw-text-opacity));
 }
 
 .QA {
@@ -1480,6 +1467,13 @@ header.l-header a {
   }
 }
 
+/* 不明 */
+.sm\:hidden {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
 /* 未使用 */
 #player {
   display: flex !important;
@@ -1499,4 +1493,12 @@ header.l-header a {
   left: -120px;
   height: 500px;
   z-index: 0;
+}
+
+.title-logo {
+  position: relative;
+  z-index: 6;
+  margin-top: -7px;
+  --tw-text-opacity: 1;
+  color: rgba(240, 39, 0, var(--tw-text-opacity));
 }
