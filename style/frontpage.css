@@ -22,6 +22,12 @@ iframe {
   margin-right: auto;
 }
 
+.center {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .wp-block-column h2 {
   text-align: center;
 }
@@ -755,16 +761,7 @@ header.l-header a {
   }
 }
 
-.red {
-  position: absolute;
-  top: 0;
-  left: calc(8.2vw - 35px);
-  z-index: 0;
-  height: 700px;
-  width: 180px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(240, 39, 0, var(--tw-bg-opacity));
-}
+
 
 #page_top_button {
   margin-top: 10px;
@@ -847,102 +844,6 @@ header.l-header a {
   margin: 5px !important;
 }
 
-.text-15em {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.text-1em {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-@media screen and (max-width:490px) {
-  .sptext-17 {
-    font-size: 17px;
-  }
-}
-
-.size-full {
-  max-width: 50%;
-}
-
-.width50 {
-  max-width: 50%;
-}
-
-.mt40 {
-  margin-top: 120px !important;
-}
-
-.pt60 {
-  padding-top: 60px;
-}
-
-.pb30 {
-  padding-bottom: 30px;
-}
-
-.mb0 {
-  margin-bottom: 0;
-}
-
-.mb40 {
-  margin-bottom: 120px !important;
-}
-
-.ml45 {
-  margin-left: 15vw;
-}
-
-@media screen and (max-width: 900px) {
-  .smhidden {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .sminvisible {
-    visibility: hidden;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .smmt-36 {
-    margin-top: -63px !important;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .spmt-36 {
-    margin-top: -50px !important;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  .spmt-25 {
-    margin-top: -58px !important;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .smmb36 {
-    margin-bottom: 36px;
-  }
-}
-
-.minwidth250 {
-  min-width: 250px;
-}
-
-.minwidth300 {
-  min-width: 300px;
-}
-
-.lineheight36 {
-  line-height: 36px;
-}
-
 .slick-slide {
   max-width: 80vw !important;
   margin-left: 40px !important;
@@ -978,10 +879,6 @@ header.l-header a {
   .positionright {
     right: 57px !important;
   }
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 
 @media screen and (min-width: 900px) {
@@ -1114,12 +1011,6 @@ header.l-header a {
   }
 }
 
-.center {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-
 @media screen and (min-width: 760px) {
   #menu-main {
     margin-top: -72px !important;
@@ -1148,14 +1039,6 @@ header.l-header a {
   transform: translateX(0%) !important;
 }
 
-.is-type-video {
-  width: 75vw !important;
-}
-
-.block {
-  display: block;
-}
-
 .movie-wrap {
   position: relative;
   padding-bottom: 56.25%;
@@ -1172,10 +1055,7 @@ header.l-header a {
   height: 100%;
 }
 
-.u-width-col-2 {
-  max-width: 100% !important;
-}
-
+/* 背景色のグレー部分 */
 .bg-grey-pc {
   width: 100vw;
   margin-left: calc((1160px - 100vw) / 2);
@@ -1232,6 +1112,132 @@ header.l-header a {
     height: 1700px;
   }
 }
+
+/* ユーティリティ */
+.red {
+  position: absolute;
+  top: 0;
+  left: calc(8.2vw - 35px);
+  z-index: 0;
+  height: 700px;
+  width: 180px;
+  --tw-bg-opacity: 1;
+  background-color: rgba(240, 39, 0, var(--tw-bg-opacity));
+}
+
+.is-type-video {
+  width: 75vw !important;
+}
+
+.block {
+  display: block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-15em {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.text-1em {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+@media screen and (max-width:490px) {
+  .sptext-17 {
+    font-size: 17px;
+  }
+}
+
+.size-full {
+  max-width: 50%;
+}
+
+.width50 {
+  max-width: 50%;
+}
+
+.mt40 {
+  margin-top: 120px !important;
+}
+
+.pt60 {
+  padding-top: 60px;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mb40 {
+  margin-bottom: 120px !important;
+}
+
+.ml45 {
+  margin-left: 15vw;
+}
+
+@media screen and (max-width: 900px) {
+  .smhidden {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sminvisible {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .smmt-36 {
+    margin-top: -63px !important;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .spmt-36 {
+    margin-top: -50px !important;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .spmt-25 {
+    margin-top: -58px !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .smmb36 {
+    margin-bottom: 36px;
+  }
+}
+
+.minwidth250 {
+  min-width: 250px;
+}
+
+.minwidth300 {
+  min-width: 300px;
+}
+
+.lineheight36 {
+  line-height: 36px;
+}
+
+.u-width-col-2 {
+  max-width: 100% !important;
+}
+
+
 
 /* 不明 */
 
