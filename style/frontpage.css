@@ -337,12 +337,6 @@ header.l-header a {
 
 /* コンポーネント */
 /* コンポーネント - 特徴 */
-@media (min-width: 600px) {
-  #features-boxes-sp {
-    display: none !important;
-  }
-}
-
 #features {
   margin-top: 100px;
   text-align: center;
@@ -355,31 +349,14 @@ header.l-header a {
   padding-bottom: 1000px;
 }
 
-@media (min-width: 600px) {
-  #features-boxes-sp {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 490px) {
   #features-boxes-sp {
     margin-top: -1700px;
   }
 }
 
-.wp-block-columns.features-boxes-pc {
-  position: relative;
-  margin-top: -1700px;
-  margin-bottom: 0 !important;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 1050px;
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 900px) {
-  .features-boxes-pc {
+@media (min-width: 600px) {
+  #features-boxes-sp {
     display: none;
   }
 }
@@ -399,6 +376,23 @@ header.l-header a {
 
 @media (min-width: 900px) {
   #features-boxes-md {
+    display: none;
+  }
+}
+
+.wp-block-columns.features-boxes-pc {
+  position: relative;
+  margin-top: -1700px;
+  margin-bottom: 0 !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 1050px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .features-boxes-pc {
     display: none;
   }
 }
@@ -615,12 +609,6 @@ header.l-header a {
 #demosite {
   padding-top: 63px;
   padding-bottom: 42px;
-}
-
-@media (max-width: 900px) {
-  .demosite {
-    padding-top: 40px;
-  }
 }
 
 /* コンポーネント - FAQ */
@@ -871,5 +859,11 @@ header.l-header a {
     margin-right: auto;
     margin-bottom: 30px;
     width: 60vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .demosite {
+    padding-top: 40px;
   }
 }
