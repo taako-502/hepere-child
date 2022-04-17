@@ -22,10 +22,26 @@ iframe {
   margin-right: auto;
 }
 
-.center {
-  display: block !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+@media (max-width: 900px) {
+  .body {
+    font-size: 15px;
+  }
+}
+
+.movie-wrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  /*アスペクト比 16:9の場合の縦幅*/
+  height: 0;
+  overflow: hidden;
+}
+
+.movie-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .wp-block-column h2 {
@@ -292,6 +308,27 @@ header.l-header a {
   }
 }
 
+/* キャッチフレーズ */
+#top-2-message {
+  font-size: 27px;
+  line-height: 39px;
+}
+
+@media (max-width: 900px) {
+  #top-2-message {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 490px) {
+  #top-2-message {
+    font-size: 15px;
+  }
+}
+
 /* スライダー */
 .slick-prev, .slick-next {
   display: none !important;
@@ -319,14 +356,16 @@ header.l-header a {
 
 .slick-dots {
   display: flex;
-  position: relative;
-  top: 58px;
+  position: relative !important;
+  top: 20px !important;
   justify-content: center;
   text-align: start;
 }
 
 .slick-dots li button {
   width: 0;
+  padding: 0 !important;
+  margin: 5px !important;
 }
 
 .slick-dots li button:before {
@@ -346,10 +385,10 @@ header.l-header a {
   height: 13px;
 }
 
-@media (max-width: 900px) {
-  .body {
-    font-size: 15px;
-  }
+.slick-slide {
+  max-width: 80vw !important;
+  margin-left: 40px !important;
+  margin-right: 40px !important;
 }
 
 @media screen and (min-width: 900px) {
@@ -358,7 +397,26 @@ header.l-header a {
   }
 }
 
+.slick-slide00, .slick-slide01, .slick-slide02 {
+  padding-top: 53px;
+  margin-right: 32px;
+  margin-bottom: 0px;
+  --tw-bg-opacity: 1;
+  background-color: white;
+}
+
 /* デモサイト */
+#demosite {
+  padding-top: 63px;
+  padding-bottom: 42px;
+}
+
+@media (max-width: 900px) {
+  .demosite {
+    padding-top: 40px;
+  }
+}
+
 .demosite-h2 {
   width: 347px;
   border-bottom-width: 1px;
@@ -372,8 +430,23 @@ header.l-header a {
 }
 
 .demosite-text {
+  margin-top: 37px;
   margin-left: auto;
   margin-right: auto;
+  width: 55vw;
+  line-height: 37px;
+}
+
+@media (max-width: 900px) {
+  .demosite-text {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 490px) {
+  .demosite-text {
+    width: 70vw;
+  }
 }
 
 .demosite-image {
@@ -406,7 +479,13 @@ header.l-header a {
 }
 
 /* FAQ */
+
 #QA {
+  margin-top: 46px;
+  margin-bottom: 64px;
+}
+
+.QA {
   margin-top: 46px;
   margin-bottom: 64px;
 }
@@ -442,6 +521,7 @@ header.l-header a {
 
 .QA-texts {
   width: 75vw;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -486,14 +566,6 @@ header.l-header a {
 
 .smb-faq__item__question, .smb-faq__item__answer {
   justify-content: center !important;
-}
-
-.slick-slide00, .slick-slide01, .slick-slide02 {
-  padding-top: 53px;
-  margin-right: 32px;
-  margin-bottom: 0px;
-  --tw-bg-opacity: 1;
-  background-color: white;
 }
 
 /* 特徴 */
@@ -564,6 +636,12 @@ header.l-header a {
 }
 
 /* サイトスピード */
+#sitespeed {
+  position: relative;
+  z-index: 150;
+  padding-bottom: 42px;
+}
+
 .sitespeed-h2 {
   display: block;
   width: 347px;
@@ -620,12 +698,6 @@ header.l-header a {
   }
 }
 
-#sitespeed {
-  position: relative;
-  z-index: 150;
-  padding-bottom: 42px;
-}
-
 .sitespeed-image {
   margin-top: 60px;
   padding-bottom: 133px;
@@ -639,75 +711,6 @@ header.l-header a {
   }
 }
 
-.QA-texts {
-  margin-top: 40px;
-  width: 75vwd;
-}
-
-.button {
-  margin-top: auto;
-  margin-bottom: auto;
-  cursor: pointer;
-  font-size: 12px;
-  background-color: #f02700;
-  width: 132px;
-  min-width: 80px;
-  height: 37px;
-  border-radius: 20px;
-  --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
-}
-
-.purchase {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  line-height: 37px !important;
-}
-
-#top-2-message {
-  font-size: 27px;
-  line-height: 39px;
-}
-
-@media (max-width: 900px) {
-  #top-2-message {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    font-size: 21px;
-  }
-}
-
-@media (max-width: 490px) {
-  #top-2-message {
-    font-size: 15px;
-  }
-}
-
-.demosite-text {
-  margin-top: 37px;
-  width: 55vw;
-  line-height: 37px;
-}
-
-@media (max-width: 900px) {
-  .demosite-text {
-    width: 70vw;
-  }
-}
-
-@media (max-width: 490px) {
-  .demosite-text {
-    width: 70vw;
-  }
-}
-
-.QA {
-  margin-top: 46px;
-  margin-bottom: 64px;
-}
-
 .movie {
   width: 42vw;
   margin-left: auto;
@@ -717,34 +720,6 @@ header.l-header a {
 @media (max-width: 900px) {
   .movie {
     width: 73vw;
-  }
-}
-
-#top-2 {
-  padding-top: 175px;
-  text-align: center;
-}
-
-@media (max-width: 900px) {
-  .top-2 {
-    padding-top: 40px;
-  }
-}
-
-@media (min-width: 900px) {
-  .sm_more\:hidden {
-    display: none;
-  }
-}
-
-#demosite {
-  padding-top: 63px;
-  padding-bottom: 42px;
-}
-
-@media (max-width: 900px) {
-  .demosite {
-    padding-top: 40px;
   }
 }
 
@@ -801,38 +776,6 @@ header.l-header a {
   .top-2-text-content-sp {
     width: 90%;
   }
-}
-
-@media (min-width: 900px) {
-  .sm_more\:hidden {
-    display: none;
-  }
-
-  .sm_more\:hidden {
-    display: none;
-  }
-}
-
-@media (min-width: 490px) {
-  .sp_more\:hidden {
-    display: none;
-  }
-}
-
-.slick-dots {
-  position: relative !important;
-  top: 20px !important;
-}
-
-.slick-dots li button {
-  padding: 0 !important;
-  margin: 5px !important;
-}
-
-.slick-slide {
-  max-width: 80vw !important;
-  margin-left: 40px !important;
-  margin-right: 40px !important;
 }
 
 .size-full {
@@ -990,38 +933,6 @@ header.l-header a {
   }
 }
 
-@media screen and (max-width: 900px) {
-  .spmt220 {
-    margin-top: 220px !important;
-  }
-}
-
-@media screen and (max-width: 782px) {
-  .fontawesome-i2svg-active {
-    margin-top: 0 !important;
-  }
-}
-
-.l-footer.open, .contents.open {
-  transform: translateX(0%) !important;
-}
-
-.movie-wrap {
-  position: relative;
-  padding-bottom: 56.25%;
-  /*アスペクト比 16:9の場合の縦幅*/
-  height: 0;
-  overflow: hidden;
-}
-
-.movie-wrap iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /* 背景色のグレー部分 */
 .bg-grey-pc {
   width: 100vw;
@@ -1080,6 +991,11 @@ header.l-header a {
   }
 }
 
+/* transform */
+.l-footer.open, .contents.open {
+  transform: translateX(0%) !important;
+}
+
 /* ユーティリティ */
 /* ユーティリティ - display */
 .block {
@@ -1134,6 +1050,12 @@ header.l-header a {
 @media screen and (max-width: 900px) {
   .smmb36 {
     margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .spmt220 {
+    margin-top: 220px !important;
   }
 }
 
@@ -1238,6 +1160,72 @@ header.l-header a {
 
 @media (max-width: 900px) {
   .sm_hidden {
+    display: none;
+  }
+}
+
+.button {
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  font-size: 12px;
+  background-color: #f02700;
+  width: 132px;
+  min-width: 80px;
+  height: 37px;
+  border-radius: 20px;
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.center {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media screen and (max-width: 782px) {
+  .fontawesome-i2svg-active {
+    margin-top: 0 !important;
+  }
+}
+
+.purchase {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 37px !important;
+}
+
+#top-2 {
+  padding-top: 175px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .top-2 {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 900px) {
+  .sm_more\:hidden {
+    display: none;
+  }
+
+  .sm_more\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 490px) {
+  .sp_more\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .sm_more\:hidden {
     display: none;
   }
 }
