@@ -705,14 +705,6 @@ header.l-header a {
 
 /* ユーティリティ */
 /* ユーティリティ - display */
-.block {
-  display: block;
-}
-
-.flex {
-  display: flex;
-}
-
 @media screen and (max-width: 900px) {
   .smhidden {
     display: none;
@@ -720,17 +712,8 @@ header.l-header a {
 }
 
 /* ユーティリティ - margin */
-.m-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mt40 {
   margin-top: 120px !important;
-}
-
-.mb0 {
-  margin-bottom: 0;
 }
 
 .mb40 {
@@ -748,20 +731,8 @@ header.l-header a {
 }
 
 @media screen and (max-width: 490px) {
-  .spmt-36 {
-    margin-top: -50px !important;
-  }
-}
-
-@media screen and (max-width: 490px) {
   .spmt-25 {
     margin-top: -58px !important;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .smmb36 {
-    margin-bottom: 36px;
   }
 }
 
@@ -791,10 +762,6 @@ header.l-header a {
   max-width: 50vw !important;
   margin-left: auto;
   margin-right: auto;
-}
-
-.width50 {
-  max-width: 50%;
 }
 
 .minwidth250 {
@@ -831,18 +798,8 @@ header.l-header a {
 }
 
 /* ユーティリティ - その他 */
-.is-type-video {
-  width: 75vw !important;
-}
-
 .cursor-pointer {
   cursor: pointer;
-}
-
-@media screen and (max-width: 900px) {
-  .sminvisible {
-    visibility: hidden;
-  }
 }
 
 /* 不明 */
@@ -866,4 +823,47 @@ header.l-header a {
   .demosite {
     padding-top: 40px;
   }
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .smmb36 {
+    margin-bottom: 36px;
+  }
+}
+
+.width50 {
+  max-width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .sminvisible {
+    visibility: hidden;
+  }
+}
+
+.is-type-video {
+  width: 75vw !important;
+}
+
+@media screen and (max-width: 490px) {
+  .spmt-36 {
+    margin-top: -50px !important;
+  }
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.block {
+  display: block;
 }
