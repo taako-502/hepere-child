@@ -72,7 +72,8 @@ iframe {
   margin-bottom: 0 !important;
 }
 
-/* ヘッダー */
+/* レイアウト */
+/* レイアウト - ヘッダー */
 @media screen and (min-width: 767px) {
   header.l-header {
     position: absolute;
@@ -255,7 +256,7 @@ header.l-header a {
   }
 }
 
-/* フッター */
+/* レイアウト - フッター */
 .footer-button {
   margin-top: 80px;
   margin-left: 10%;
@@ -312,7 +313,8 @@ header.l-header a {
   }
 }
 
-/* キャッチフレーズ */
+/* コンポーネント */
+/* コンポーネント - キャッチフレーズ */
 #top-2-message {
   font-size: 27px;
   line-height: 39px;
@@ -333,7 +335,8 @@ header.l-header a {
   }
 }
 
-/* スライダー */
+/* コンポーネント */
+/* コンポーネント - スライダー */
 .slick-prev, .slick-next {
   display: none !important;
 }
@@ -409,7 +412,7 @@ header.l-header a {
   background-color: white;
 }
 
-/* デモサイト */
+/* コンポーネント - デモサイト */
 #demosite {
   padding-top: 63px;
   padding-bottom: 42px;
@@ -421,7 +424,7 @@ header.l-header a {
   }
 }
 
-/* FAQ */
+/* コンポーネント - FAQ */
 #QA {
   margin-top: 46px;
   margin-bottom: 64px;
@@ -450,7 +453,7 @@ header.l-header a {
   margin-right: auto;
 }
 
-/* 特徴 */
+/* コンポーネント - 特徴 */
 @media (min-width: 600px) {
   #features-boxes-sp {
     display: none !important;
@@ -517,28 +520,14 @@ header.l-header a {
   }
 }
 
-/* サイトスピード */
+/* コンポーネント - サイトスピード */
 #sitespeed {
   position: relative;
   z-index: 150;
   padding-bottom: 42px;
 }
 
-.sitespeed-img-left {
-  margin-right: 4.5vw;
-  width: 39vw;
-}
-
-@media (max-width: 900px) {
-  .sitespeed-img-left {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    width: 60vw;
-  }
-}
-
-/* 機能の紹介 */
+/* コンポーネント - 機能の紹介 */
 #function {
   margin-bottom: 95px;
   border-radius: 50px;
@@ -663,7 +652,7 @@ header.l-header a {
   }
 }
 
-/* 背景色のグレー部分 */
+/* コンポーネント - 背景色のグレー部分 */
 .bg-grey-pc {
   width: 100vw;
   margin-left: calc((1160px - 100vw) / 2);
@@ -871,3 +860,16 @@ header.l-header a {
 /* 不明 */
 
 /* 未使用 */
+.sitespeed-img-left {
+  margin-right: 4.5vw;
+  width: 39vw;
+}
+
+@media (max-width: 900px) {
+  .sitespeed-img-left {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 60vw;
+  }
+}
