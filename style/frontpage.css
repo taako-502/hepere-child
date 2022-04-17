@@ -336,6 +336,73 @@ header.l-header a {
 }
 
 /* コンポーネント */
+/* コンポーネント - 特徴 */
+@media (min-width: 600px) {
+  #features-boxes-sp {
+    display: none !important;
+  }
+}
+
+#features {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#features-boxes-sp {
+  margin-top: -1800px;
+  margin-bottom: 0;
+  --tw-bg-opacity: 1;
+  padding-bottom: 1000px;
+}
+
+@media (min-width: 600px) {
+  #features-boxes-sp {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  #features-boxes-sp {
+    margin-top: -1700px;
+  }
+}
+
+.wp-block-columns.features-boxes-pc {
+  position: relative;
+  margin-top: -1700px;
+  margin-bottom: 0 !important;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 1050px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .features-boxes-pc {
+    display: none;
+  }
+}
+
+#features-boxes-md {
+  margin-top: -1800px;
+  margin-bottom: 0;
+  --tw-bg-opacity: 1;
+  padding-bottom: 1000px;
+}
+
+@media (max-width: 600px) {
+  #features-boxes-md {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  #features-boxes-md {
+    display: none;
+  }
+}
+
 /* コンポーネント - スライダー */
 .slick-prev, .slick-next {
   display: none !important;
@@ -410,121 +477,6 @@ header.l-header a {
   margin-bottom: 0px;
   --tw-bg-opacity: 1;
   background-color: white;
-}
-
-/* コンポーネント - デモサイト */
-#demosite {
-  padding-top: 63px;
-  padding-bottom: 42px;
-}
-
-@media (max-width: 900px) {
-  .demosite {
-    padding-top: 40px;
-  }
-}
-
-/* コンポーネント - FAQ */
-#QA {
-  margin-top: 46px;
-  margin-bottom: 64px;
-}
-
-.smb-faq {
-  margin-bottom: 50px;
-}
-
-.smb-faq__item__question__body, .smb-faq__item__answer__body {
-  line-height: 36px;
-  max-width: 900px;
-  font-size: 18px !important;
-}
-
-.smb-faq__item__question, .smb-faq__item__answer {
-  justify-content: center !important;
-}
-
-.smb-faq__item {
-  border: 0px solid transparent;
-  border-top: 0px solid transparent !important;
-  padding-bottom: 0 !important;
-  max-width: 80vw;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* コンポーネント - 特徴 */
-@media (min-width: 600px) {
-  #features-boxes-sp {
-    display: none !important;
-  }
-}
-
-#features {
-  margin-top: 100px;
-  text-align: center;
-}
-
-#features-boxes-sp {
-  margin-top: -1800px;
-  margin-bottom: 0;
-  --tw-bg-opacity: 1;
-  padding-bottom: 1000px;
-}
-
-@media (min-width: 600px) {
-  #features-boxes-sp {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 490px) {
-  #features-boxes-sp {
-    margin-top: -1700px;
-  }
-}
-
-.wp-block-columns.features-boxes-pc {
-  position: relative;
-  margin-top: -1700px;
-  margin-bottom: 0 !important;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 1050px;
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 900px) {
-  .features-boxes-pc {
-    display: none;
-  }
-}
-
-#features-boxes-md {
-  margin-top: -1800px;
-  margin-bottom: 0;
-  --tw-bg-opacity: 1;
-  padding-bottom: 1000px;
-}
-
-@media (max-width: 600px) {
-  #features-boxes-md {
-    display: none;
-  }
-}
-
-@media (min-width: 900px) {
-  #features-boxes-md {
-    display: none;
-  }
-}
-
-/* コンポーネント - サイトスピード */
-#sitespeed {
-  position: relative;
-  z-index: 150;
-  padding-bottom: 42px;
 }
 
 /* コンポーネント - 機能の紹介 */
@@ -650,6 +602,54 @@ header.l-header a {
   .bg-red-left-sp, .bg-red-right-sp {
     display: none;
   }
+}
+
+/* コンポーネント - サイトスピード */
+#sitespeed {
+  position: relative;
+  z-index: 150;
+  padding-bottom: 42px;
+}
+
+/* コンポーネント - デモサイト */
+#demosite {
+  padding-top: 63px;
+  padding-bottom: 42px;
+}
+
+@media (max-width: 900px) {
+  .demosite {
+    padding-top: 40px;
+  }
+}
+
+/* コンポーネント - FAQ */
+#QA {
+  margin-top: 46px;
+  margin-bottom: 64px;
+}
+
+.smb-faq {
+  margin-bottom: 50px;
+}
+
+.smb-faq__item__question__body, .smb-faq__item__answer__body {
+  line-height: 36px;
+  max-width: 900px;
+  font-size: 18px !important;
+}
+
+.smb-faq__item__question, .smb-faq__item__answer {
+  justify-content: center !important;
+}
+
+.smb-faq__item {
+  border: 0px solid transparent;
+  border-top: 0px solid transparent !important;
+  padding-bottom: 0 !important;
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* コンポーネント - 背景色のグレー部分 */
