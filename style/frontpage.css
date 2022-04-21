@@ -31,7 +31,6 @@ iframe {
 @media (max-width: 600px) {
   body {
     width: 101vw;
-
   }
 }
 
@@ -472,7 +471,6 @@ header.l-header a {
   .slick-slide {
     max-width: 70vw !important;
   }
-
 }
 
 .slick-slide00, .slick-slide01, .slick-slide02 {
@@ -822,7 +820,6 @@ header.l-header a {
   }
 }
 
-
 .text-1em {
   font-size: 1.5em;
   font-weight: bold;
@@ -838,5 +835,3 @@ header.l-header a {
 .cursor-pointer {
   cursor: pointer;
 }
-
-
