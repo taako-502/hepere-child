@@ -349,7 +349,7 @@ header.l-header a {
 }
 
 #features-boxes-sp {
-  margin-top: -1700px;
+  margin-top: -1750px;
   margin-bottom: 0;
   --tw-bg-opacity: 1;
   padding-bottom: 1000px;
@@ -362,7 +362,7 @@ header.l-header a {
 }
 
 #features-boxes-md {
-  margin-top: -1800px;
+  margin-top: -1900px;
   margin-bottom: 0;
   --tw-bg-opacity: 1;
   padding-top: 20px;
@@ -381,7 +381,6 @@ header.l-header a {
 }
 
 .wp-block-columns.features-boxes-pc {
-  position: relative;
   margin-top: -1700px;
   margin-bottom: 0 !important;
   padding-left: 10px;
@@ -569,28 +568,39 @@ header.l-header a {
   margin-top: -850px !important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .bg-red-left, .bg-red-right {
     display: none;
   }
 }
 
-@media screen and (max-width: 900px) {
-  .bg-red-left, .bg-red-right {
-    margin-top: -950px;
-    padding: 0 5vw;
-  }
+.bg-red-left-md {
+  background: red;
+  position: absolute;
+  left: 0;
+  padding: 0 15vw;
+  height: 600px;
+  margin-top: -850px !important;
+}
+
+.bg-red-right-md {
+  background: red;
+  position: absolute;
+  right: 0;
+  padding: 0 15vw;
+  height: 600px;
+  margin-top: -850px !important;
 }
 
 @media screen and (max-width: 600px) {
-  .bg-red-left, .bg-red-right {
-    padding: 0 20px;
+  .bg-red-left-md, .bg-red-right-md {
+    display: none;
   }
 }
 
-@media screen and (max-width: 780px) {
-  .bg-red-right {
-    left: auto;
+@media screen and (min-width: 900px) {
+  .bg-red-left-md, .bg-red-right-md {
+    display: none;
   }
 }
 
@@ -684,7 +694,7 @@ header.l-header a {
   width: 100vw;
   margin-left: -3vw;
   background-color: rgba(249, 246, 246);
-  height: 1800px;
+  height: 1900px;
 }
 
 @media screen and (max-width: 600px) {
@@ -709,7 +719,7 @@ header.l-header a {
   width: 101vw;
   margin-left: -4vw;
   background-color: rgba(249, 246, 246);
-  height: 1750px;
+  height: 1800px;
 }
 
 @media screen and (min-width: 600px) {
@@ -740,8 +750,12 @@ header.l-header a {
 }
 
 /* ユーティリティ - margin */
-.mt40 {
+.mt120 {
   margin-top: 120px !important;
+}
+
+.mt240 {
+  margin-top: 240px !important;
 }
 
 .mb40 {
@@ -754,13 +768,13 @@ header.l-header a {
 
 @media screen and (max-width: 780px) {
   .smmt-36 {
-    margin-top: -63px !important;
+    margin-top: -60px !important;
   }
 }
 
 @media screen and (max-width: 490px) {
   .spmt-25 {
-    margin-top: -58px !important;
+    margin-top: -54px !important;
   }
 }
 
@@ -828,6 +842,12 @@ header.l-header a {
 @media screen and (max-width:490px) {
   .sptext-17 {
     font-size: 17px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .sptext-15 {
+    font-size: 14px !important;
   }
 }
 
