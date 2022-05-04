@@ -289,18 +289,6 @@
   }
 }
 
-.wp-block-button__link {
-  pointer-events: none;
-}
-
-.pointer-events-none {
-  pointer-events: none;
-}
-
-.pointer-events-on {
-  pointer-events: auto !important;
-}
-
 .c-footer-cta__img {
   display: block;
   margin-top: 40px;
