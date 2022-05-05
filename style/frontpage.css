@@ -118,19 +118,19 @@ header.l-header a {
 
 @media screen and (max-width: 899.9px) {
   .nav-link {
-    padding: 1em !important;
+    padding: 0.6em !important;
   }
 }
 
 @media screen and (min-width: 760px) {
   #menu-main {
-    margin-top: -72px !important;
+    margin-top: 30px !important;
   }
 }
 
 @media screen and (min-width: 899.9px) {
   #menu-main {
-    margin-top: -78px !important;
+    margin-top: 30px !important;
   }
 }
 
