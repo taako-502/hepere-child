@@ -202,6 +202,12 @@ header.l-header a {
   }
 }
 
+@media screen and (max-width: 489.9px) {
+  .p-fv {
+    background-position-x: 65%;
+  }
+}
+
 .p-fv__wrapper {
   position: relative;
   max-width: 1024px;
