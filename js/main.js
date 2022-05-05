@@ -17,6 +17,16 @@
       });
     });
 
+    //bg-greyのmarginを調整する
+      let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
+      let windowWidth = jQuery(window).width();
+      let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
+      if (windowWidth > 1180){
+        jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
+      } else {
+        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+      }
+
     /* 機能紹介部分の「詳しく」「閉じる」ボタン部分 */
     //機能紹介の「閉じる」ボタンおよび詳細内容を初めに非表示にする
     jQuery('.detail_content').toggle();
@@ -241,6 +251,15 @@
     //画面幅を変更した際に、画面幅に応じて機能紹介部分のsp/md/pcビューを切り替え
     jQuery(window).resize(function() {
       let windowSize = jQuery(window).width();
+      //bg-greyのmarginを調整する
+      let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
+      let windowWidth = jQuery(window).width();
+      let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
+      if (windowWidth > 1180){
+        jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
+      } else {
+        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+      }
       if ( windowSize > 899.5 ) {
         let resizeFunctionsHeight = jQuery('.functions').height();
         //spとmdの赤い帯を非表示

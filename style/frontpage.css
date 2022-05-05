@@ -122,6 +122,12 @@ header.l-header a {
   }
 }
 
+@media screen and (max-width: 767.9px) {
+  .nav-link {
+    padding: 1.5em !important;
+  }
+}
+
 @media screen and (min-width: 760px) {
   #menu-main {
     margin-top: 30px !important;
@@ -622,7 +628,6 @@ header.l-header a {
 /* コンポーネント - 背景色のグレー部分 */
 .bg-grey-pc {
   width: 100vw;
-  margin-left: calc((1160px - 100vw) / 2);
   background-color: rgba(249, 246, 246);
   height: 1700px;
 }
