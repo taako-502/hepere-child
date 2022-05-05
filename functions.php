@@ -49,7 +49,6 @@ add_action( 'hepere_page_under_header', function() {
   <div class="p-fv">
     <div class="p-fv__wrapper">
       <div class="l-header--serial">
-        <a class="l-header__description l-header__description--serial" href="https://hepere.com/"><?php bloginfo( 'description' ); ?></a>
         </div>
       <p class="p-fv__phrase">
         HEPEREは初めての<br>ブログ運営・個人ビジネスに最適な<br>WordPressテーマです

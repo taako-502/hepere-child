@@ -551,7 +551,7 @@ header.l-header a {
 }
 
 .bg-red-left {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   left: 0;
   padding: 0 15vw;
@@ -560,7 +560,7 @@ header.l-header a {
 }
 
 .bg-red-right {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   right: 0;
   padding: 0 15vw;
@@ -575,7 +575,7 @@ header.l-header a {
 }
 
 .bg-red-left-md {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   left: 0;
   padding: 0 15vw;
@@ -584,7 +584,7 @@ header.l-header a {
 }
 
 .bg-red-right-md {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   right: 0;
   padding: 0 15vw;
@@ -605,7 +605,7 @@ header.l-header a {
 }
 
 .bg-red-left-sp {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   left: 0;
   padding: 0 5vw;
@@ -614,7 +614,7 @@ header.l-header a {
 }
 
 .bg-red-right-sp {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   right: 0;
   padding: 0 5vw;
@@ -705,7 +705,22 @@ header.l-header a {
 
 @media screen and (min-width: 766.9px) {
   .bg-grey-md {
+    width: 100vw;
     margin-left: -10vw;
+  }
+}
+
+@media screen and (min-width: 821.9px) {
+  .bg-grey-md {
+    width: 100vw;
+    margin-left: -9.5vw;
+  }
+}
+
+@media screen and (min-width: 849.9px) {
+  .bg-grey-md {
+    width: 100vw;
+    margin-left: -9.25vw;
   }
 }
 

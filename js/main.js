@@ -241,7 +241,7 @@
     //画面幅を変更した際に、画面幅に応じて機能紹介部分のsp/md/pcビューを切り替え
     jQuery(window).resize(function() {
       let windowSize = jQuery(window).width();
-      if ( windowSize > 900 ) {
+      if ( windowSize > 899.5 ) {
         let resizeFunctionsHeight = jQuery('.functions').height();
         //spとmdの赤い帯を非表示
         jQuery('.bg-red-left-sp, .bg-red-right-sp, .bg-red-left-md, .bg-red-right-md').css('display', 'none');
@@ -253,7 +253,8 @@
         jQuery('.bg-grey-sp, .bg-grey-md').css('display', 'none');
         //pcの背景のグレー部分を表示
         jQuery('.bg-grey-pc').css('display', 'block');
-      } else if ( windowSize > 600 && windowSize < 900 ) {
+        //margin-topを調整
+      } else if ( windowSize > 600 && windowSize < 899.5 ) {
         let resizeFunctionsHeight = jQuery('.functions').height();
         //spとpcの赤い帯を非表示
         jQuery('.bg-red-left-sp, .bg-red-right-sp, .bg-red-left, .bg-red-right').css('display', 'none');
