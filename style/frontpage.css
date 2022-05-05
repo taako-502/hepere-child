@@ -80,7 +80,7 @@ iframe {
 
 /* レイアウト */
 /* レイアウト - ヘッダー */
-@media screen and (min-width: 766.9px) {
+@media screen and (min-width: 767.8px) {
   header.l-header {
     position: absolute;
     background-color: transparent;
@@ -228,7 +228,7 @@ header.l-header a {
   background-color: rgba(240, 39, 0, var(--tw-bg-opacity));
 }
 
-@media screen and (max-width: 766.9px) {
+@media screen and (max-width: 767.8px) {
   .p-fv__box {
     top: 42.5vh;
     width: 150px;
@@ -254,7 +254,7 @@ header.l-header a {
   }
 }
 
-@media screen and (max-width: 766.9px) {
+@media screen and (max-width: 767.8px) {
   .p-fv__phrase {
     font-size: 1.2rem;
     top: 45vh;
@@ -265,63 +265,6 @@ header.l-header a {
   .p-fv__phrase {
     font-size: 0.8rem;
     top: 50vh;
-  }
-}
-
-/* レイアウト - フッター */
-.footer-button {
-  margin-top: 80px;
-  margin-left: 10%;
-  z-index: 4;
-  height: 44px;
-  width: 313px;
-  cursor: pointer;
-  border-radius: 20px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  text-align: center;
-  line-height: 44px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 899.9px) {
-  .footer-button {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-}
-
-/* フッター上CTA */
-.c-footer-cta__text {
-  margin-top: 70px;
-  margin-left: 10%;
-  line-height: 40px;
-}
-
-.c-footer-cta-top {
-  font-size: 24px;
-  width: 500px;
-  display: block;
-  text-align: center;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  border-bottom: 1px solid white;
-  padding-bottom: 20px;
-}
-
-@media screen and (max-width: 489.9px) {
-  .c-footer-cta-top {
-    font-size: 16px;
-    width: 330px;
-  }
-}
-
-@media screen and (max-width: 899.9px) {
-  .c-footer-cta-top {
-    padding-top: 60px;
-    margin-top: 0;
   }
 }
 
@@ -709,7 +652,7 @@ header.l-header a {
   }
 }
 
-@media screen and (min-width: 766.9px) {
+@media screen and (min-width: 767.8px) {
   .bg-grey-md {
     width: 100vw;
     margin-left: -10vw;
@@ -827,7 +770,6 @@ header.l-header a {
 
 /* ユーティリティ - サイズ */
 .size-full {
-  max-width: 50vw !important;
   margin-left: auto;
   margin-right: auto;
 }
