@@ -4,6 +4,22 @@
  * フロントページのCSSを記述する
  */
 /* ベース */
+
+/* 横方向のスクロールバー削除 */
+.content{
+  margin: 0 auto;
+  width: 200px;
+  height: 150px;
+  white-space: nowrap;
+  overflow: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+}
+
+.content::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+
 img {
   margin-left: auto;
   margin-right: auto;
