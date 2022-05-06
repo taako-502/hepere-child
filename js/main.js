@@ -203,6 +203,12 @@
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP + 455,
           }, 600);
+          jQuery('#features-boxes-md').animate({
+            'margin-top': minusMarginMD + 330,
+          }, 600);
+          jQuery('.features-boxes-pc').animate({
+            'margin-top': minusMarginPC + 280,
+          }, 600);
         } else if (windowSize < 900) {
           //mdビューの場合
           jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
@@ -220,8 +226,14 @@
           jQuery('.bg-grey-md').animate({
             'height': greyHeightMD - 330,
           }, 600);
+          jQuery('#features-boxes-sp').animate({
+            'margin-top': minusMarginSP + 455,
+          }, 600);
           jQuery('#features-boxes-md').animate({
-            'margin-top': minusMarginMD + 350,
+            'margin-top': minusMarginMD + 330,
+          }, 600);
+          jQuery('.features-boxes-pc').animate({
+            'margin-top': minusMarginPC + 280,
           }, 600);
         } else {
         //PCビューの場合
@@ -239,6 +251,12 @@
           }, 600);
           jQuery('.bg-grey-pc').animate({
             'height': greyHeightPC - 280,
+          }, 600);
+          jQuery('#features-boxes-sp').animate({
+            'margin-top': minusMarginSP + 455,
+          }, 600);
+          jQuery('#features-boxes-md').animate({
+            'margin-top': minusMarginMD + 330,
           }, 600);
           jQuery('.features-boxes-pc').animate({
             'margin-top': minusMarginPC + 280,
