@@ -17,6 +17,16 @@
       });
     });
 
+    //bg-greyのmarginを調整する
+      let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
+      let windowWidth = jQuery(window).width();
+      let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
+      if (windowWidth > 1180){
+        jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
+      } else {
+        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+      }
+
     /* 機能紹介部分の「詳しく」「閉じる」ボタン部分 */
     //機能紹介の「閉じる」ボタンおよび詳細内容を初めに非表示にする
     jQuery('.detail_content').toggle();
@@ -193,6 +203,12 @@
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP + 455,
           }, 600);
+          jQuery('#features-boxes-md').animate({
+            'margin-top': minusMarginMD + 330,
+          }, 600);
+          jQuery('.features-boxes-pc').animate({
+            'margin-top': minusMarginPC + 280,
+          }, 600);
         } else if (windowSize < 900) {
           //mdビューの場合
           jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
@@ -210,8 +226,14 @@
           jQuery('.bg-grey-md').animate({
             'height': greyHeightMD - 330,
           }, 600);
+          jQuery('#features-boxes-sp').animate({
+            'margin-top': minusMarginSP + 455,
+          }, 600);
           jQuery('#features-boxes-md').animate({
-            'margin-top': minusMarginMD + 350,
+            'margin-top': minusMarginMD + 330,
+          }, 600);
+          jQuery('.features-boxes-pc').animate({
+            'margin-top': minusMarginPC + 280,
           }, 600);
         } else {
         //PCビューの場合
@@ -230,6 +252,12 @@
           jQuery('.bg-grey-pc').animate({
             'height': greyHeightPC - 280,
           }, 600);
+          jQuery('#features-boxes-sp').animate({
+            'margin-top': minusMarginSP + 455,
+          }, 600);
+          jQuery('#features-boxes-md').animate({
+            'margin-top': minusMarginMD + 330,
+          }, 600);
           jQuery('.features-boxes-pc').animate({
             'margin-top': minusMarginPC + 280,
           }, 600);
@@ -241,7 +269,16 @@
     //画面幅を変更した際に、画面幅に応じて機能紹介部分のsp/md/pcビューを切り替え
     jQuery(window).resize(function() {
       let windowSize = jQuery(window).width();
-      if ( windowSize > 900 ) {
+      //bg-greyのmarginを調整する
+      let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
+      let windowWidth = jQuery(window).width();
+      let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
+      if (windowWidth > 1180){
+        jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
+      } else {
+        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+      }
+      if ( windowSize > 899.5 ) {
         let resizeFunctionsHeight = jQuery('.functions').height();
         //spとmdの赤い帯を非表示
         jQuery('.bg-red-left-sp, .bg-red-right-sp, .bg-red-left-md, .bg-red-right-md').css('display', 'none');
@@ -253,7 +290,8 @@
         jQuery('.bg-grey-sp, .bg-grey-md').css('display', 'none');
         //pcの背景のグレー部分を表示
         jQuery('.bg-grey-pc').css('display', 'block');
-      } else if ( windowSize > 600 && windowSize < 900 ) {
+        //margin-topを調整
+      } else if ( windowSize > 600 && windowSize < 899.5 ) {
         let resizeFunctionsHeight = jQuery('.functions').height();
         //spとpcの赤い帯を非表示
         jQuery('.bg-red-left-sp, .bg-red-right-sp, .bg-red-left, .bg-red-right').css('display', 'none');

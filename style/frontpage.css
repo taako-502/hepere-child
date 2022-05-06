@@ -80,7 +80,7 @@ iframe {
 
 /* レイアウト */
 /* レイアウト - ヘッダー */
-@media screen and (min-width: 766.9px) {
+@media screen and (min-width: 767.8px) {
   header.l-header {
     position: absolute;
     background-color: transparent;
@@ -118,19 +118,25 @@ header.l-header a {
 
 @media screen and (max-width: 899.9px) {
   .nav-link {
-    padding: 1em !important;
+    padding: 0.6em !important;
   }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (max-width: 767.9px) {
+  .nav-link {
+    padding: 1.5em !important;
+  }
+}
+
+@media screen and (min-width: 767.9px) {
   #menu-main {
-    margin-top: -72px !important;
+    margin-top: 30px !important;
   }
 }
 
 @media screen and (min-width: 899.9px) {
   #menu-main {
-    margin-top: -78px !important;
+    margin-top: 30px !important;
   }
 }
 
@@ -202,6 +208,12 @@ header.l-header a {
   }
 }
 
+@media screen and (max-width: 489.9px) {
+  .p-fv {
+    background-position-x: 65%;
+  }
+}
+
 .p-fv__wrapper {
   position: relative;
   max-width: 1024px;
@@ -222,7 +234,7 @@ header.l-header a {
   background-color: rgba(240, 39, 0, var(--tw-bg-opacity));
 }
 
-@media screen and (max-width: 766.9px) {
+@media screen and (max-width: 767.8px) {
   .p-fv__box {
     top: 42.5vh;
     width: 150px;
@@ -248,7 +260,7 @@ header.l-header a {
   }
 }
 
-@media screen and (max-width: 766.9px) {
+@media screen and (max-width: 767.8px) {
   .p-fv__phrase {
     font-size: 1.2rem;
     top: 45vh;
@@ -259,63 +271,6 @@ header.l-header a {
   .p-fv__phrase {
     font-size: 0.8rem;
     top: 50vh;
-  }
-}
-
-/* レイアウト - フッター */
-.footer-button {
-  margin-top: 80px;
-  margin-left: 10%;
-  z-index: 4;
-  height: 44px;
-  width: 313px;
-  cursor: pointer;
-  border-radius: 20px;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
-  text-align: center;
-  line-height: 44px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 899.9px) {
-  .footer-button {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-}
-
-/* フッター上CTA */
-.c-footer-cta__text {
-  margin-top: 70px;
-  margin-left: 10%;
-  line-height: 40px;
-}
-
-.c-footer-cta-top {
-  font-size: 24px;
-  width: 500px;
-  display: block;
-  text-align: center;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-  border-bottom: 1px solid white;
-  padding-bottom: 20px;
-}
-
-@media screen and (max-width: 489.9px) {
-  .c-footer-cta-top {
-    font-size: 16px;
-    width: 330px;
-  }
-}
-
-@media screen and (max-width: 899.9px) {
-  .c-footer-cta-top {
-    padding-top: 60px;
-    margin-top: 0;
   }
 }
 
@@ -551,7 +506,7 @@ header.l-header a {
 }
 
 .bg-red-left {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   left: 0;
   padding: 0 15vw;
@@ -560,7 +515,7 @@ header.l-header a {
 }
 
 .bg-red-right {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   right: 0;
   padding: 0 15vw;
@@ -575,7 +530,7 @@ header.l-header a {
 }
 
 .bg-red-left-md {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   left: 0;
   padding: 0 15vw;
@@ -584,7 +539,7 @@ header.l-header a {
 }
 
 .bg-red-right-md {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   right: 0;
   padding: 0 15vw;
@@ -605,7 +560,7 @@ header.l-header a {
 }
 
 .bg-red-left-sp {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   left: 0;
   padding: 0 5vw;
@@ -614,7 +569,7 @@ header.l-header a {
 }
 
 .bg-red-right-sp {
-  background: red;
+  background: #e14c2f;
   position: absolute;
   right: 0;
   padding: 0 5vw;
@@ -673,7 +628,6 @@ header.l-header a {
 /* コンポーネント - 背景色のグレー部分 */
 .bg-grey-pc {
   width: 100vw;
-  margin-left: calc((1160px - 100vw) / 2);
   background-color: rgba(249, 246, 246);
   height: 1700px;
 }
@@ -703,9 +657,24 @@ header.l-header a {
   }
 }
 
-@media screen and (min-width: 766.9px) {
+@media screen and (min-width: 767.8px) {
   .bg-grey-md {
+    width: 100vw;
     margin-left: -10vw;
+  }
+}
+
+@media screen and (min-width: 821.9px) {
+  .bg-grey-md {
+    width: 100vw;
+    margin-left: -9.5vw;
+  }
+}
+
+@media screen and (min-width: 849.9px) {
+  .bg-grey-md {
+    width: 100vw;
+    margin-left: -9.25vw;
   }
 }
 
@@ -806,7 +775,6 @@ header.l-header a {
 
 /* ユーティリティ - サイズ */
 .size-full {
-  max-width: 50vw !important;
   margin-left: auto;
   margin-right: auto;
 }
