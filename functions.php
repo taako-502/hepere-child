@@ -39,6 +39,19 @@ add_action( 'enqueue_block_editor_assets', function() {
 });
 
 /**
+ * カラーパレット追加
+ */
+add_action('after_setup_theme', function() {
+  add_theme_support('editor-color-palette', array(
+    array(
+      'name'  => 'テーマカラー' ,
+      'slug'  => 'hepere_main',
+      'color' => '#F02700',
+    ) ,
+  ));
+});
+
+/**
  * トップページのヘッダー下に挿入
  */
 add_action( 'hepere_page_under_header', function() {
@@ -97,5 +110,3 @@ add_action( 'hepere_on_footer', function() {
 </div>
   <?php
 });
-
-
