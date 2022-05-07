@@ -90,7 +90,7 @@ iframe {
   padding-bottom: 0 !important;
 }
 
-#features, .footer-pc {
+.footer-pc {
   margin-bottom: 0 !important;
 }
 
@@ -315,8 +315,14 @@ header.l-header a {
 /* コンポーネント */
 /* コンポーネント - 特徴 */
 #features {
-  margin-top: 100px;
+  display: block;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  padding-bottom: 64px;
+  margin-bottom: 64px;
+  border-bottom: 1px solid #000;
 }
 
 #features-boxes-sp {
@@ -603,19 +609,37 @@ header.l-header a {
 #sitespeed {
   position: relative;
   z-index: 150;
-  padding-bottom: 42px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #000;
 }
 
 /* コンポーネント - デモサイト */
 #demosite {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 63px;
-  padding-bottom: 42px;
+  margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #000;
 }
 
 /* コンポーネント - FAQ */
 #QA {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 46px;
   margin-bottom: 64px;
+  padding-bottom: 64px;
+  border-bottom: 1px solid #000;
 }
 
 .smb-faq {
