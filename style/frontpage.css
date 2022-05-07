@@ -325,6 +325,12 @@ header.l-header a {
   border-bottom: 1px solid #000;
 }
 
+@media screen and (max-width: 489.9px){
+  #features {
+    width: 300px;
+  }
+}
+
 #features-boxes-sp {
   margin-top: -1750px;
   margin-bottom: 0;
@@ -618,6 +624,12 @@ header.l-header a {
   border-bottom: 1px solid #000;
 }
 
+@media screen and (max-width: 489.9px){
+  #sitespeed {
+    width: 300px;
+  }
+}
+
 /* コンポーネント - デモサイト */
 #demosite {
   width: 400px;
@@ -630,6 +642,12 @@ header.l-header a {
   border-bottom: 1px solid #000;
 }
 
+@media screen and (max-width: 489.9px){
+  #demosite {
+    width: 300px;
+  }
+}
+
 /* コンポーネント - FAQ */
 #QA {
   width: 400px;
@@ -640,6 +658,12 @@ header.l-header a {
   margin-bottom: 64px;
   padding-bottom: 64px;
   border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 489.9px){
+  #QA {
+    width: 300px;
+  }
 }
 
 .smb-faq {
