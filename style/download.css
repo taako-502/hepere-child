@@ -357,8 +357,18 @@
   }
 }
 
-@media screen and (max-width: 900px) {
+.nav-link {
+  padding: 1.5em !important;
+}
+
+@media screen and (max-width: 899.9px) {
   .nav-link {
-    padding: 1em !important;
+    padding: 0.6em !important;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .nav-link {
+    padding: 1.5em !important;
   }
 }
