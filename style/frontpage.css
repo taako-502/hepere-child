@@ -6,17 +6,14 @@
 /* ベース */
 
 /* 横方向のスクロールバー削除 */
-.content{
-  margin: 0 auto;
-  width: 200px;
+html {
   height: 150px;
-  white-space: nowrap;
-  overflow: scroll;
+  overflow-x: scroll;
   -ms-overflow-style: none;    /* IE, Edge 対応 */
   scrollbar-width: none;       /* Firefox 対応 */
 }
 
-.content::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+html::-webkit-scrollbar {  /* Chrome, Safari 対応 */
   display:none;
 }
 
@@ -600,7 +597,7 @@ header.l-header a {
   background: #e14c2f;
   position: absolute;
   right: 0;
-  padding: 0 5vw;
+  padding: 0 0 0 10vw;
   height: 600px;
   margin-top: -1000px !important;
 }
