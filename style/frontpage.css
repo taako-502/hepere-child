@@ -382,20 +382,42 @@ header.l-header a {
   }
 }
 
-#topchange {
+#topchange-pc {
   position: relative;
   top: -2220px;
 }
 
-@media screen and (min-width: 600px){
-  #topchange {
-    top: -2320px; 
+@media screen and (max-width: 899.9px){
+  #topchange-pc {
+    display: none;
   }
 }
 
-@media screen and (min-width: 900px){
-  #topchange {
-    top: -2220px; 
+#topchange-md {
+  position: relative;
+  top: -2320px;
+}
+
+@media screen and (max-width: 599.9px){
+  #topchange-md {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 899.9px){
+  #topchange-md {
+    display: none;
+  }
+}
+
+#topchange-sp {
+  position: relative;
+  top: -2220px;
+}
+
+@media screen and (min-width: 599.9px){
+  #topchange-sp {
+    display: none;
   }
 }
 
