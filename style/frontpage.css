@@ -822,11 +822,21 @@ header.l-header a {
   }
 }
 
-@media screen and (max-width: 489.9px) {
+@media screen and (min-width: 454.9px) {
   .bg-grey-sp {
-    width: 100vw;
-    height: 2200px;
-    margin-left: -5vw;
+    margin-left: -4.25vw;
+  }
+}
+
+@media screen and (min-width: 519.9px) {
+  .bg-grey-sp {
+    margin-left: -4vw;
+  }
+}
+
+@media screen and (min-width: 559.9px) {
+  .bg-grey-sp {
+    margin-left: -3.75vw;
   }
 }
 
