@@ -385,18 +385,18 @@ header.l-header a {
 
 #topchange {
   position: relative;
-  top: -2250px;
+  top: -2220px;
 }
 
 @media screen and (min-width: 600px){
   #topchange {
-    top: -2350px; 
+    top: -2320px; 
   }
 }
 
 @media screen and (min-width: 900px){
   #topchange {
-    top: -2250px; 
+    top: -2220px; 
   }
 }
 
@@ -457,7 +457,7 @@ header.l-header a {
 }
 
 .slick-slide {
-  max-width: 75vw !important;
+  max-width: 70vw !important;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 40px !important;
@@ -725,7 +725,7 @@ header.l-header a {
   height: 2200px;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1177.9px) {
   .bg-grey-pc {
     margin-left: -80px;
   }

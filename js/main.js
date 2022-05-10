@@ -293,7 +293,7 @@
       let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
       let windowWidth = jQuery(window).width();
       let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
-      if (windowWidth > 1180){
+      if (windowWidth > 1179.9){
         jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
       } else {
         jQuery('.bg-grey-pc').css('margin-left', '-80px');
