@@ -484,6 +484,10 @@ header.l-header a {
   background-color: white;
 }
 
+.slick-track img {
+  margin-bottom: 50px; 
+}
+
 /* コンポーネント - 機能の紹介 */
 #function {
   margin-bottom: 95px;
