@@ -7,14 +7,27 @@
 
 /* 横方向のスクロールバー削除 */
 html {
-  height: 150px;
   overflow-x: scroll;
   -ms-overflow-style: none;    /* IE, Edge 対応 */
   scrollbar-width: none;       /* Firefox 対応 */
+  -webkit-overflow-scrolling: auto;
 }
 
 html::-webkit-scrollbar {  /* Chrome, Safari 対応 */
-  display:none;
+  display: none;
+  -webkit-appearance: none;
+}
+
+body {
+  overflow-x: scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+  -webkit-overflow-scrolling: auto;
+}
+
+body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display: none;
+  -webkit-appearance: none;
 }
 
 img {
@@ -43,7 +56,7 @@ iframe {
 
 @media (max-width: 599.9px) {
   body {
-    width: 101vw;
+    width: 100vw;
   }
 }
 
@@ -259,7 +272,7 @@ header.l-header a {
 .p-fv__phrase {
   z-index: 100;
   position: absolute;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #FFF;
   line-height: 3em;
   top: 150px;
@@ -268,7 +281,7 @@ header.l-header a {
 
 @media screen and (max-width: 899.9px) {
   .p-fv__phrase {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     top: 35vh;
   }
 }
@@ -276,14 +289,7 @@ header.l-header a {
 @media screen and (max-width: 767.8px) {
   .p-fv__phrase {
     font-size: 1.2rem;
-    top: 45vh;
-  }
-}
-
-@media screen and (max-width: 599.9px) {
-  .p-fv__phrase {
-    font-size: 0.8rem;
-    top: 50vh;
+    top: 52vh;
   }
 }
 
@@ -303,12 +309,6 @@ header.l-header a {
   }
 }
 
-@media (max-width: 489.9px) {
-  #top-2-message {
-    font-size: 15px;
-  }
-}
-
 /* コンポーネント */
 /* コンポーネント - 特徴 */
 #features {
@@ -322,14 +322,14 @@ header.l-header a {
   border-bottom: 1px solid #000;
 }
 
-@media screen and (max-width: 489.9px){
-  #features {
+@media screen and (max-width: 489.9px) {
+  #features{
     width: 300px;
   }
 }
 
 #features-boxes-sp {
-  margin-top: -1750px;
+  margin-top: -2200px;
   margin-bottom: 0;
   --tw-bg-opacity: 1;
   padding-bottom: 1000px;
@@ -342,7 +342,7 @@ header.l-header a {
 }
 
 #features-boxes-md {
-  margin-top: -1899.9px;
+  margin-top: -2299.9px;
   margin-bottom: 0;
   --tw-bg-opacity: 1;
   padding-top: 20px;
@@ -361,7 +361,7 @@ header.l-header a {
 }
 
 .wp-block-columns.features-boxes-pc {
-  margin-top: -1700px;
+  margin-top: -2200px;
   margin-bottom: 0 !important;
   padding-left: 10px;
   padding-right: 10px;
@@ -373,6 +373,29 @@ header.l-header a {
 @media (max-width: 899.9px) {
   .features-boxes-pc {
     display: none !important;
+  }
+}
+
+@media (min-width: 1159.9px) {
+  .features-boxes-pc br {
+    display: none;
+  }
+}
+
+#topchange {
+  position: relative;
+  top: -2220px;
+}
+
+@media screen and (min-width: 600px){
+  #topchange {
+    top: -2320px; 
+  }
+}
+
+@media screen and (min-width: 900px){
+  #topchange {
+    top: -2220px; 
   }
 }
 
@@ -433,7 +456,7 @@ header.l-header a {
 }
 
 .slick-slide {
-  max-width: 75vw !important;
+  max-width: 70vw !important;
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 40px !important;
@@ -458,6 +481,10 @@ header.l-header a {
   margin-bottom: 0px;
   --tw-bg-opacity: 1;
   background-color: white;
+}
+
+.slick-track img {
+  margin-bottom: 50px; 
 }
 
 /* コンポーネント - 機能の紹介 */
@@ -495,9 +522,16 @@ header.l-header a {
 }
 
 .functions-box-shadow{
+  position: relative;
+  z-index: 180;
   box-shadow: 2px 2px 4px #eae8e8 !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  padding: 30px;
+}
+
+@media screen and (max-width: 899.9px){
+  .functions-box-shadow{
+    padding: 50px;
+  }
 }
 
 .positionright {
@@ -560,7 +594,7 @@ header.l-header a {
   left: 0;
   padding: 0 15vw;
   height: 600px;
-  margin-top: -850px !important;
+  margin-top: -900px !important;
 }
 
 .bg-red-right-md {
@@ -569,7 +603,7 @@ header.l-header a {
   right: 0;
   padding: 0 15vw;
   height: 600px;
-  margin-top: -850px !important;
+  margin-top: -900px !important;
 }
 
 @media screen and (max-width: 599.9px) {
@@ -616,6 +650,7 @@ header.l-header a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 200px !important;
   margin-bottom: 64px;
   padding-bottom: 64px;
   border-bottom: 1px solid #000;
@@ -623,7 +658,7 @@ header.l-header a {
 
 @media screen and (max-width: 489.9px){
   #sitespeed {
-    width: 300px;
+    width: 230px;
   }
 }
 
@@ -690,10 +725,10 @@ header.l-header a {
 .bg-grey-pc {
   width: 100vw;
   background-color: rgba(249, 246, 246);
-  height: 1700px;
+  height: 2200px;
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1177.9px) {
   .bg-grey-pc {
     margin-left: -80px;
   }
@@ -709,7 +744,7 @@ header.l-header a {
   width: 100vw;
   margin-left: -3vw;
   background-color: rgba(249, 246, 246);
-  height: 1899.9px;
+  height: 2299.9px;
 }
 
 @media screen and (max-width: 599.9px) {
@@ -718,24 +753,31 @@ header.l-header a {
   }
 }
 
+@media screen and (min-width: 650.8px) {
+  .bg-grey-md {
+    width: 100vw;
+    margin-left: -2.75vw;
+  }
+}
+
 @media screen and (min-width: 767.8px) {
   .bg-grey-md {
     width: 100vw;
-    margin-left: -10vw;
+    margin-left: -10.5vw;
   }
 }
 
 @media screen and (min-width: 821.9px) {
   .bg-grey-md {
     width: 100vw;
-    margin-left: -9.5vw;
+    margin-left: -9.75vw;
   }
 }
 
 @media screen and (min-width: 849.9px) {
   .bg-grey-md {
     width: 100vw;
-    margin-left: -9.25vw;
+    margin-left: -9.5vw;
   }
 }
 
@@ -746,10 +788,10 @@ header.l-header a {
 }
 
 .bg-grey-sp {
-  width: 101vw;
-  margin-left: -4vw;
+  width: 100vw;
+  margin-left: -5vw;
   background-color: rgba(249, 246, 246);
-  height: 1800px;
+  height: 2200px;
 }
 
 @media screen and (min-width: 599.9px) {
@@ -761,8 +803,8 @@ header.l-header a {
 @media screen and (max-width: 489.9px) {
   .bg-grey-sp {
     width: 100vw;
-    height: 1700px;
-    margin-left: -4vw;
+    height: 2200px;
+    margin-left: -5vw;
   }
 }
 
@@ -853,18 +895,23 @@ header.l-header a {
 }
 
 /* ユーティリティ - テキスト */
+.font-bold {
+  font-weight: bold;
+}
+
 .lineheight36 {
   line-height: 36px;
 }
 
 .text-15em {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
+  margin-top: 0 !important;
 }
 
-@media screen and (max-width: 899.9px) {
+@media screen and (max-width: 899.9px){
   .text-15em {
-    font-size: 1.5em;
+    margin-bottom: 50px !important;
   }
 }
 
