@@ -383,6 +383,12 @@ header.l-header a {
   }
 }
 
+@media (min-width: 1159.9px) {
+  .features-boxes-pc br {
+    display: none;
+  }
+}
+
 #topchange {
   position: relative;
   top: -2220px;
