@@ -122,6 +122,12 @@ header.l-header a {
   padding: 0 !important;
 }
 
+@media screen and (min-width: 767.9px) and (max-width: 899.9px) {
+  .l-fixed-header{
+    padding: 0 5px;
+  }
+}
+
 .l-header-logo--frontpage {
   margin-left: 40px !important;
 }
@@ -142,9 +148,15 @@ header.l-header a {
   padding: 1.5em !important;
 }
 
+@media screen and (max-width: 979.9px){
+  .nav-link {
+    padding: 1em !important;
+  }
+}
+
 @media screen and (max-width: 899.9px) {
   .nav-link {
-    padding: 0.6em !important;
+    padding: 0.4em !important;
   }
 }
 
