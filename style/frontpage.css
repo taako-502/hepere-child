@@ -122,6 +122,12 @@ header.l-header a {
   padding: 0 !important;
 }
 
+@media screen and (min-width: 767.9px) and (max-width: 899.9px) {
+  .l-fixed-header{
+    padding: 0 5px;
+  }
+}
+
 .l-header-logo--frontpage {
   margin-left: 40px !important;
 }
@@ -142,9 +148,15 @@ header.l-header a {
   padding: 1.5em !important;
 }
 
+@media screen and (max-width: 979.9px){
+  .nav-link {
+    padding: 1em !important;
+  }
+}
+
 @media screen and (max-width: 899.9px) {
   .nav-link {
-    padding: 0.6em !important;
+    padding: 0.4em !important;
   }
 }
 
@@ -382,20 +394,42 @@ header.l-header a {
   }
 }
 
-#topchange {
+#topchange-pc {
   position: relative;
   top: -2220px;
 }
 
-@media screen and (min-width: 600px){
-  #topchange {
-    top: -2320px; 
+@media screen and (max-width: 899.9px){
+  #topchange-pc {
+    display: none;
   }
 }
 
-@media screen and (min-width: 900px){
-  #topchange {
-    top: -2220px; 
+#topchange-md {
+  position: relative;
+  top: -2320px;
+}
+
+@media screen and (max-width: 599.9px){
+  #topchange-md {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 899.9px){
+  #topchange-md {
+    display: none;
+  }
+}
+
+#topchange-sp {
+  position: relative;
+  top: -2220px;
+}
+
+@media screen and (min-width: 599.9px){
+  #topchange-sp {
+    display: none;
   }
 }
 
@@ -800,11 +834,21 @@ header.l-header a {
   }
 }
 
-@media screen and (max-width: 489.9px) {
+@media screen and (min-width: 454.9px) {
   .bg-grey-sp {
-    width: 100vw;
-    height: 2200px;
-    margin-left: -5vw;
+    margin-left: -4.25vw;
+  }
+}
+
+@media screen and (min-width: 519.9px) {
+  .bg-grey-sp {
+    margin-left: -4vw;
+  }
+}
+
+@media screen and (min-width: 559.9px) {
+  .bg-grey-sp {
+    margin-left: -3.75vw;
   }
 }
 

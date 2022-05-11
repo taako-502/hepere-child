@@ -17,14 +17,16 @@
       });
     });
 
-    //bg-greyのmarginを調整する
-      let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
+    //bg-greyのmarginを事前に調整する
+      let maxContentWidth = parseInt(jQuery('.contents').css('max-width'));
       let windowWidth = jQuery(window).width();
-      let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
-      if (windowWidth > 1180){
+      let bgGreyMarginLeft = (Math.abs((maxContentWidth - windowWidth)) * -1 / 2) -12.5;
+      if (windowWidth > 899.9 && windowWidth < 1179.9){
+        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+      } else if (windowWidth > maxContentWidth){
         jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
       } else {
-        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+        jQuery('.bg-grey-pc').css('margin-left', '-12.5px');
       }
 
     /* 機能紹介部分の「詳しく」「閉じる」ボタン部分 */
@@ -50,23 +52,19 @@
       let greyHeightPC = Number(jQuery('.bg-grey-pc').css('height').replace('px', ''));
       let greyHeightMD = Number(jQuery('.bg-grey-md').css('height').replace('px', ''));
       let greyHeightSP = Number(jQuery('.bg-grey-sp').css('height').replace('px', ''));
-      let topChangeTop = Number(jQuery('#topchange').css('top').replace('px', ''));
+      let topChangeTopPC = Number(jQuery('#topchange-pc').css('top').replace('px', ''));
+      let topChangeTopMD = Number(jQuery('#topchange-md').css('top').replace('px', ''));
+      let topChangeTopSP = Number(jQuery('#topchange-sp').css('top').replace('px', ''));
+      let childDetailContentHeight = jQuery(this).parent().parent().next('.detail_content').height();
 
       //「詳しく」ボタンをクリックした際に、画面幅に応じて赤い帯の部分と背景のグレー部分を調整
       let clicked = function() {
         let windowSize = jQuery(window).width();
         //spビューの場合
         if (windowSize < 600){
+          let bgRedHeightSP = jQuery('.bg-red-left-sp').height();
           jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
-            'height': functionsHeight + 150,
-            'margin-top': functionsMargin - 450,
-          }, 600);
-          jQuery('.bg-red-left-md, .bg-red-right-md').animate({
-            'height': functionsHeight + 150,
-            'margin-top': functionsMargin - 450,
-          }, 600);
-          jQuery('.bg-red-left, .bg-red-right').animate({
-            'height': functionsHeight + 150,
+            'height': bgRedHeightSP + childDetailContentHeight + 28,
             'margin-top': functionsMargin - 450,
           }, 600);
           jQuery('.bg-grey-sp').animate({
@@ -76,7 +74,7 @@
             'height': greyHeightMD + 330,
           }, 600);
           jQuery('.bg-grey-pc').animate({
-            'height': greyHeightPC + 280,
+            'height': greyHeightPC + 310,
           }, 600);
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP - 455,
@@ -85,23 +83,22 @@
             'margin-top': minusMarginMD - 330,
           }, 600);
           jQuery('.features-boxes-pc').animate({
-            'margin-top': minusMarginPC - 280,
+            'margin-top': minusMarginPC - 310,
           }, 600);
-          jQuery('#topchange').animate({
-            'top': topChangeTop - 455,
+          jQuery('#topchange-sp').animate({
+            'top': topChangeTopSP - 450,
+          }, 600);
+          jQuery('#topchange-md').animate({
+            'top': topChangeTopMD - 330,
+          }, 600);
+          jQuery('#topchange-pc').animate({
+            'top': topChangeTopPC - 310,
           }, 600);
           //mdビューの場合
         } else if (windowSize < 900) {
-          jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
-            'height': functionsHeight + 150,
-            'margin-top': functionsMargin - 450,
-          }, 600);
+          let bgRedHeightMD = jQuery('.bg-red-left-md').height();
           jQuery('.bg-red-left-md, .bg-red-right-md').animate({
-            'height': functionsHeight + 150,
-            'margin-top': functionsMargin - 450,
-          }, 600);
-          jQuery('.bg-red-left, .bg-red-right').animate({
-            'height': functionsHeight + 150,
+            'height': bgRedHeightMD + childDetailContentHeight + 28,
             'margin-top': functionsMargin - 450,
           }, 600);
           jQuery('.bg-grey-sp').animate({
@@ -111,7 +108,7 @@
             'height': greyHeightMD + 330,
           }, 600);
           jQuery('.bg-grey-pc').animate({
-            'height': greyHeightPC + 280,
+            'height': greyHeightPC + 310,
           }, 600);
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP - 455,
@@ -120,23 +117,22 @@
             'margin-top': minusMarginMD - 330,
           }, 600);
           jQuery('.features-boxes-pc').animate({
-            'margin-top': minusMarginPC - 280,
+            'margin-top': minusMarginPC - 310,
           }, 600);
-          jQuery('#topchange').animate({
-            'top': topChangeTop - 330,
+          jQuery('#topchange-sp').animate({
+            'top': topChangeTopSP - 450,
+          }, 600);
+          jQuery('#topchange-md').animate({
+            'top': topChangeTopMD - 330,
+          }, 600);
+          jQuery('#topchange-pc').animate({
+            'top': topChangeTopPC - 310,
           }, 600);
         } else {
           //PCビューの場合
-          jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
-            'height': functionsHeight + 150,
-            'margin-top': functionsMargin - 450,
-          }, 600);
-          jQuery('.bg-red-left-md, .bg-red-right-md').animate({
-            'height': functionsHeight + 150,
-            'margin-top': functionsMargin - 450,
-          }, 600);
+          let bgRedHeightPC = jQuery('.bg-red-left').height();
           jQuery('.bg-red-left, .bg-red-right').animate({
-            'height': functionsHeight + 150,
+            'height': bgRedHeightPC + childDetailContentHeight + 28,
             'margin-top': functionsMargin - 450,
           }, 600);
           jQuery('.bg-grey-sp').animate({
@@ -146,7 +142,7 @@
             'height': greyHeightMD + 330,
           }, 600);
           jQuery('.bg-grey-pc').animate({
-            'height': greyHeightPC + 280,
+            'height': greyHeightPC + 310,
           }, 600);
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP - 455,
@@ -155,10 +151,16 @@
             'margin-top': minusMarginMD - 330,
           }, 600);
           jQuery('.features-boxes-pc').animate({
-            'margin-top': minusMarginPC - 280,
+            'margin-top': minusMarginPC - 310,
           }, 600);
-          jQuery('#topchange').animate({
-            'top': topChangeTop - 280,
+          jQuery('#topchange-sp').animate({
+            'top': topChangeTopSP - 450,
+          }, 600);
+          jQuery('#topchange-md').animate({
+            'top': topChangeTopMD - 330,
+          }, 600);
+          jQuery('#topchange-pc').animate({
+            'top': topChangeTopPC - 310,
           }, 600);
         }
       };
@@ -183,23 +185,20 @@
       let greyHeightPC = Number(jQuery('.bg-grey-pc').css('height').replace('px', ''));
       let greyHeightMD = Number(jQuery('.bg-grey-md').css('height').replace('px', ''));
       let greyHeightSP = Number(jQuery('.bg-grey-sp').css('height').replace('px', ''));
-      let topChangeTop = Number(jQuery('#topchange').css('top').replace('px', ''));
+      let topChangeTopPC = Number(jQuery('#topchange-pc').css('top').replace('px', ''));
+      let topChangeTopMD = Number(jQuery('#topchange-md').css('top').replace('px', ''));
+      let topChangeTopSP = Number(jQuery('#topchange-sp').css('top').replace('px', ''));
+      let childDetailContentHeight = jQuery(this).parent().parent().next('.detail_content').height();
+
 
       //「閉じる」ボタンをクリックした際に、画面幅に応じて赤い帯の部分と背景のグレー部分を調整
       let unclicked = function() {
         let windowSize = jQuery(window).width();
         if (windowSize < 600){
           //spビューの場合
+          let bgRedHeightSP = jQuery('.bg-red-left-sp').height();
           jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
-            'height': functionsHeight - 283,
-            'margin-top': functionsMargin + 450,
-          }, 600);
-          jQuery('.bg-red-left-md, .bg-red-right-md').animate({
-            'height': functionsHeight - 200,
-            'margin-top': functionsMargin + 450,
-          }, 600);
-          jQuery('.bg-red-left, .bg-red-right').animate({
-            'height': functionsHeight - 150,
+            'height': bgRedHeightSP - childDetailContentHeight - 28,
             'margin-top': functionsMargin + 450,
           }, 600);
           jQuery('.bg-grey-sp').animate({
@@ -209,7 +208,7 @@
             'height': greyHeightMD - 330,
           }, 600);
           jQuery('.bg-grey-pc').animate({
-            'height': greyHeightPC - 280,
+            'height': greyHeightPC - 310,
           }, 600);
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP + 455,
@@ -218,28 +217,33 @@
             'margin-top': minusMarginMD + 330,
           }, 600);
           jQuery('.features-boxes-pc').animate({
-            'margin-top': minusMarginPC + 280,
+            'margin-top': minusMarginPC + 310,
           }, 600);
-          jQuery('#topchange').animate({
-            'top': topChangeTop + 455,
+          jQuery('#topchange-sp').animate({
+            'top': topChangeTopSP + 450,
+          }, 600);
+          jQuery('#topchange-md').animate({
+            'top': topChangeTopMD + 330,
+          }, 600);
+          jQuery('#topchange-pc').animate({
+            'top': topChangeTopPC + 310,
           }, 600);
         } else if (windowSize < 900) {
           //mdビューの場合
-          jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
-            'height': functionsHeight - 283,
-            'margin-top': functionsMargin + 450,
-          }, 600);
+          let bgRedHeightMD = jQuery('.bg-red-left-md').height();
           jQuery('.bg-red-left-md, .bg-red-right-md').animate({
-            'height': functionsHeight - 200,
+            'height': bgRedHeightMD - childDetailContentHeight - 28,
             'margin-top': functionsMargin + 450,
           }, 600);
-          jQuery('.bg-red-left, .bg-red-right').animate({
-            'height': functionsHeight - 150,
-            'margin-top': functionsMargin + 450,
+          jQuery('.bg-grey-sp').animate({
+            'height': greyHeightSP - 455,
           }, 600);
           jQuery('.bg-grey-md').animate({
             'height': greyHeightMD - 330,
           }, 600);
+          jQuery('.bg-grey-pc').animate({
+            'height': greyHeightPC - 310,
+          }, 600);
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP + 455,
           }, 600);
@@ -247,27 +251,32 @@
             'margin-top': minusMarginMD + 330,
           }, 600);
           jQuery('.features-boxes-pc').animate({
-            'margin-top': minusMarginPC + 280,
+            'margin-top': minusMarginPC + 310,
           }, 600);
-          jQuery('#topchange').animate({
-            'top': topChangeTop + 330,
+          jQuery('#topchange-sp').animate({
+            'top': topChangeTopSP + 450,
+          }, 600);
+          jQuery('#topchange-md').animate({
+            'top': topChangeTopMD + 330,
+          }, 600);
+          jQuery('#topchange-pc').animate({
+            'top': topChangeTopPC + 310,
           }, 600);
         } else {
         //PCビューの場合
-          jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
-            'height': functionsHeight - 283,
-            'margin-top': functionsMargin + 450,
-          }, 600);
-          jQuery('.bg-red-left-md, .bg-red-right-md').animate({
-            'height': functionsHeight - 200,
-            'margin-top': functionsMargin + 450,
-          }, 600);
+        let bgRedHeightPC = jQuery('.bg-red-left').height();
           jQuery('.bg-red-left, .bg-red-right').animate({
-            'height': functionsHeight - 150,
+            'height': bgRedHeightPC - childDetailContentHeight - 28,
             'margin-top': functionsMargin + 450,
+          }, 600);
+          jQuery('.bg-grey-sp').animate({
+            'height': greyHeightSP - 455,
+          }, 600);
+          jQuery('.bg-grey-md').animate({
+            'height': greyHeightMD - 330,
           }, 600);
           jQuery('.bg-grey-pc').animate({
-            'height': greyHeightPC - 280,
+            'height': greyHeightPC - 310,
           }, 600);
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP + 455,
@@ -276,10 +285,16 @@
             'margin-top': minusMarginMD + 330,
           }, 600);
           jQuery('.features-boxes-pc').animate({
-            'margin-top': minusMarginPC + 280,
+            'margin-top': minusMarginPC + 310,
           }, 600);
-          jQuery('#topchange').animate({
-            'top': topChangeTop + 280,
+          jQuery('#topchange-sp').animate({
+            'top': topChangeTopSP + 450,
+          }, 600);
+          jQuery('#topchange-md').animate({
+            'top': topChangeTopMD + 330,
+          }, 600);
+          jQuery('#topchange-pc').animate({
+            'top': topChangeTopPC + 310,
           }, 600);
         }
       };
@@ -290,16 +305,19 @@
     jQuery(window).resize(function() {
       let windowSize = jQuery(window).width();
       //bg-greyのmarginを調整する
-      let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
+      let maxContentWidth = parseInt(jQuery('.contents').css('max-width'));
       let windowWidth = jQuery(window).width();
-      let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
-      if (windowWidth > 1179.9){
+      let bgGreyMarginLeft = (Math.abs((maxContentWidth - windowWidth)) * -1 / 2) - 12.5;
+      if (windowWidth > 899.9 && windowWidth < 1179.9){
+        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+      } else if (windowWidth > maxContentWidth){
         jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
       } else {
-        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+        jQuery('.bg-grey-pc').css('margin-left', '-12.5px');
       }
       if ( windowSize > 899.5 ) {
         let resizeFunctionsHeight = jQuery('.functions').height();
+        let topChangePC = jQuery('#topchage-pc').css('top');
         //spとmdの赤い帯を非表示
         jQuery('.bg-red-left-sp, .bg-red-right-sp, .bg-red-left-md, .bg-red-right-md').css('display', 'none');
         //pcの赤い帯を表示
@@ -310,6 +328,8 @@
         jQuery('.bg-grey-sp, .bg-grey-md').css('display', 'none');
         //pcの背景のグレー部分を表示
         jQuery('.bg-grey-pc').css('display', 'block');
+        //特徴部分の位置を調整
+        jQuery('#topchange-pc').css('top', topChangePC);
         //margin-topを調整
       } else if ( windowSize > 600 && windowSize < 899.5 ) {
         let resizeFunctionsHeight = jQuery('.functions').height();
@@ -371,3 +391,4 @@
   })(jQuery);
 
 });
+
