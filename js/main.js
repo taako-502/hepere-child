@@ -17,14 +17,16 @@
       });
     });
 
-    //bg-greyのmarginを調整する
-      let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
+    //bg-greyのmarginを事前に調整する
+      let maxContentWidth = parseInt(jQuery('.contents').css('max-width'));
       let windowWidth = jQuery(window).width();
-      let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
-      if (windowWidth > 1180){
+      let bgGreyMarginLeft = (Math.abs((maxContentWidth - windowWidth)) * -1 / 2) -12.5;
+      if (windowWidth > 899.9 && windowWidth < 1179.9){
+        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+      } else if (windowWidth > maxContentWidth){
         jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
       } else {
-        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+        jQuery('.bg-grey-pc').css('margin-left', '-12.5px');
       }
 
     /* 機能紹介部分の「詳しく」「閉じる」ボタン部分 */
@@ -342,13 +344,15 @@
     jQuery(window).resize(function() {
       let windowSize = jQuery(window).width();
       //bg-greyのmarginを調整する
-      let maxContentWidth =parseInt(jQuery('.contents').css('max-width'));
+      let maxContentWidth = parseInt(jQuery('.contents').css('max-width'));
       let windowWidth = jQuery(window).width();
-      let bgGreyMarginLeft = ((maxContentWidth - windowWidth) / 2) - 12.5;
-      if (windowWidth > 1179.9){
+      let bgGreyMarginLeft = (Math.abs((maxContentWidth - windowWidth)) * -1 / 2) - 12.5;
+      if (windowWidth > 899.9 && windowWidth < 1179.9){
+        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+      } else if (windowWidth > maxContentWidth){
         jQuery('.bg-grey-pc').css('margin-left', bgGreyMarginLeft);
       } else {
-        jQuery('.bg-grey-pc').css('margin-left', '-80px');
+        jQuery('.bg-grey-pc').css('margin-left', '-12.5px');
       }
       if ( windowSize > 899.5 ) {
         let resizeFunctionsHeight = jQuery('.functions').height();
