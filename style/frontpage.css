@@ -284,7 +284,7 @@ header.l-header a {
 .p-fv__phrase {
   z-index: 100;
   position: absolute;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #FFF;
   line-height: 3em;
   top: 150px;
@@ -293,15 +293,15 @@ header.l-header a {
 
 @media screen and (max-width: 899.9px) {
   .p-fv__phrase {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     top: 35vh;
   }
 }
 
 @media screen and (max-width: 767.8px) {
   .p-fv__phrase {
-    font-size: 1.2rem;
-    top: 52vh;
+    font-size: 0.8rem;
+    top: 55vh;
   }
 }
 
