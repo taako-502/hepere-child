@@ -182,7 +182,6 @@ header.l-header a {
 #scroll-pc, #scroll-sp {
   height: 60px;
   scroll-behavior: smooth;
-  overflow-y: scroll;
 }
 
 #scroll-pc {
