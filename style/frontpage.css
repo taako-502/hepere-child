@@ -3,8 +3,12 @@
 /**
  * フロントページのCSSを記述する
  */
-/* ベース */
+ /* カスタムプロパティ */
+:root {
+  --sp-top-margin: 0!important;
+}
 
+/* ベース */
 /* 横方向のスクロールバー削除 */
 html {
   overflow-x: scroll;
@@ -517,7 +521,7 @@ header.l-header a {
 }
 
 .slick-track img {
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
 }
 
 /* コンポーネント - 機能の紹介 */
