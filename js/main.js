@@ -16,6 +16,8 @@
         scrollTop: scrollPosition - 160
       });
     });
+    
+    //特徴〜機能紹介部分の灰色の背景部分の位置を事前に調整
 
       //WordPress側で設定されたコンテンツ幅を取得
       let maxContentWidth = parseInt(jQuery('.contents').css('max-width'));
@@ -23,7 +25,7 @@
       let windowWidth = jQuery(window).width();
       //灰色の背景部分の位置を調整するための値を取得
       let bgGreyMarginLeft = (Math.abs((maxContentWidth - windowWidth)) * -1 / 2) -12.5;
-      //画面幅が900〜1180pxの場合、背景部分のmargin-leftを固定
+      //画面幅が900〜1180pxの場合、背景部分のmargin-leftを固定して余白やはみだしが生じないようにする
       if (windowWidth > 899.9 && windowWidth < 1179.9){
         jQuery('.bg-grey-pc').css('margin-left', '-80px');
       //画面幅がWordPress側で設定されたコンテンツ幅よりも広い場合、コンテンツ幅に応じてmargin-leftを調整
@@ -46,9 +48,9 @@
       jQuery(this).parent().prev().children().toggle('slow');
       //詳細内容を開く
       jQuery(this).parent().parent().next('.wp-block-columns').toggle('slow');
-      //赤い帯部分の位置（margin-top）を調整
+      //赤い帯部分の位置（margin-top）を取得
       let functionsMargin = Number(jQuery('.bg-red-left').css('margin-top').replace('px', ''));
-      //features-boxes部分のmargin-topを取得
+      //特徴のスライダー部分の位置（margin-top）を取得
       let minusMarginPC = Number(jQuery('.features-boxes-pc').css('margin-top').replace('px', ''));
       let minusMarginMD = Number(jQuery('#features-boxes-md').css('margin-top').replace('px', ''));
       let minusMarginSP = Number(jQuery('#features-boxes-sp').css('margin-top').replace('px', ''));
@@ -56,7 +58,7 @@
       let greyHeightPC = Number(jQuery('.bg-grey-pc').css('height').replace('px', ''));
       let greyHeightMD = Number(jQuery('.bg-grey-md').css('height').replace('px', ''));
       let greyHeightSP = Number(jQuery('.bg-grey-sp').css('height').replace('px', ''));
-      //「HEPEREの特徴」部分（topchange部分）のtopを取得
+      //「hepereの特徴」の文字部分のtopを取得
       let topChangeTopPC = Number(jQuery('#topchange-pc').css('top').replace('px', ''));
       let topChangeTopMD = Number(jQuery('#topchange-md').css('top').replace('px', ''));
       let topChangeTopSP = Number(jQuery('#topchange-sp').css('top').replace('px', ''));
@@ -84,7 +86,7 @@
           jQuery('.bg-grey-pc').animate({
             'height': greyHeightPC + 310,
           }, 600);
-          //features-boxesの位置を上に上げる
+          //特徴のスライダー部分の位置を上に上げる
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP - 455,
           }, 600);
@@ -94,7 +96,7 @@
           jQuery('.features-boxes-pc').animate({
             'margin-top': minusMarginPC - 310,
           }, 600);
-          //「HEPEREの特徴」（topchange部分）を上に上げる
+          //「HEPEREの特徴」の文字を上に上げる
           jQuery('#topchange-sp').animate({
             'top': topChangeTopSP - 450,
           }, 600);
@@ -121,7 +123,7 @@
           jQuery('.bg-grey-pc').animate({
             'height': greyHeightPC + 310,
           }, 600);
-          //features-boxesの位置を上に上げる
+          //特徴のスライダー部分位置を上に上げる
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP - 455,
           }, 600);
@@ -131,7 +133,7 @@
           jQuery('.features-boxes-pc').animate({
             'margin-top': minusMarginPC - 310,
           }, 600);
-          //「HEPEREの特徴」（topchange部分）を上に上げる
+          //「HEPEREの特徴」の文字を上に上げる
           jQuery('#topchange-sp').animate({
             'top': topChangeTopSP - 450,
           }, 600);
@@ -158,7 +160,7 @@
           jQuery('.bg-grey-pc').animate({
             'height': greyHeightPC + 310,
           }, 600);
-          //features-boxesの位置を上に上げる
+          //特徴のスライダー部分の位置を上に上げる
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP - 455,
           }, 600);
@@ -168,7 +170,7 @@
           jQuery('.features-boxes-pc').animate({
             'margin-top': minusMarginPC - 310,
           }, 600);
-          //「HEPEREの特徴」（topchange部分）を上に上げる
+          //「HEPEREの特徴」の文字を上に上げる
           jQuery('#topchange-sp').animate({
             'top': topChangeTopSP - 450,
           }, 600);
@@ -191,9 +193,9 @@
       jQuery(this).parent().next().children().toggle('slow');
       //詳細内容を開く
       jQuery(this).parent().parent().next('.wp-block-columns').toggle('slow');
-      //赤い帯部分の位置（margin-top）を調整
+      //赤い帯部分の位置（margin-top）を取得
       let functionsMargin = Number(jQuery('.bg-red-left').css('margin-top').replace('px', ''));
-      //features-boxes部分のmargin-topを取得
+      //特徴のスライダー部分の位置（margin-top）を取得
       let minusMarginPC = Number(jQuery('.features-boxes-pc').css('margin-top').replace('px', ''));
       let minusMarginMD = Number(jQuery('#features-boxes-md').css('margin-top').replace('px', ''));
       let minusMarginSP = Number(jQuery('#features-boxes-sp').css('margin-top').replace('px', ''));
@@ -201,7 +203,7 @@
       let greyHeightPC = Number(jQuery('.bg-grey-pc').css('height').replace('px', ''));
       let greyHeightMD = Number(jQuery('.bg-grey-md').css('height').replace('px', ''));
       let greyHeightSP = Number(jQuery('.bg-grey-sp').css('height').replace('px', ''));
-      //「HEPEREの特徴」部分（topchange部分）のtopを取得
+      //「hepereの特徴」の文字部分のtopを取得
       let topChangeTopPC = Number(jQuery('#topchange-pc').css('top').replace('px', ''));
       let topChangeTopMD = Number(jQuery('#topchange-md').css('top').replace('px', ''));
       let topChangeTopSP = Number(jQuery('#topchange-sp').css('top').replace('px', ''));
@@ -216,7 +218,7 @@
           //spビューの場合
           let bgRedHeightSP = jQuery('.bg-red-left-sp').height();
           jQuery('.bg-red-left-sp, .bg-red-right-sp').animate({
-            //詳細な内容部分の高さに応じて赤い帯部分のheightを伸ばし、margin-topで位置を調整する
+            //詳細な内容部分の高さに応じて赤い帯部分の高さを伸ばし、margin-topで位置を調整する
             'height': bgRedHeightSP - childDetailContentHeight - 28,
             'margin-top': functionsMargin + 450,
           }, 600);
@@ -230,7 +232,7 @@
           jQuery('.bg-grey-pc').animate({
             'height': greyHeightPC - 310,
           }, 600);
-          //features-boxesの位置を下に下げる
+          //特徴のスライダー部分の位置を下に下げる
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP + 455,
           }, 600);
@@ -240,7 +242,7 @@
           jQuery('.features-boxes-pc').animate({
             'margin-top': minusMarginPC + 310,
           }, 600);
-          //「HEPEREの特徴」（topchange部分）を下に下げる
+          //「HEPEREの特徴」の文字を下に下げる
           jQuery('#topchange-sp').animate({
             'top': topChangeTopSP + 450,
           }, 600);
@@ -254,7 +256,7 @@
           //mdビューの場合
           let bgRedHeightMD = jQuery('.bg-red-left-md').height();
           jQuery('.bg-red-left-md, .bg-red-right-md').animate({
-            //詳細な内容部分の高さに応じて赤い帯部分のheightを伸ばし、margin-topで位置を調整する
+            //詳細な内容部分の高さに応じて赤い帯部分の高さを伸ばし、margin-topで位置を調整する
             'height': bgRedHeightMD - childDetailContentHeight - 28,
             'margin-top': functionsMargin + 450,
           }, 600);
@@ -268,7 +270,7 @@
           jQuery('.bg-grey-pc').animate({
             'height': greyHeightPC - 310,
           }, 600);
-          //features-boxesの位置を下に下げる
+          //特徴のスライダー部分の位置を下に下げる
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP + 455,
           }, 600);
@@ -278,7 +280,7 @@
           jQuery('.features-boxes-pc').animate({
             'margin-top': minusMarginPC + 310,
           }, 600);
-          //「HEPEREの特徴」（topchange部分）を下に下げる
+          //「HEPEREの特徴」の文字を下に下げる
           jQuery('#topchange-sp').animate({
             'top': topChangeTopSP + 450,
           }, 600);
@@ -292,7 +294,7 @@
         //PCビューの場合
         let bgRedHeightPC = jQuery('.bg-red-left').height();
           jQuery('.bg-red-left, .bg-red-right').animate({
-            //詳細な内容部分の高さに応じて赤い帯部分のheightを伸ばし、margin-topで位置を調整する
+            //詳細な内容部分の高さに応じて赤い帯部分の高さを伸ばし、margin-topで位置を調整する
             'height': bgRedHeightPC - childDetailContentHeight - 28,
             'margin-top': functionsMargin + 450,
           }, 600);
@@ -306,7 +308,7 @@
           jQuery('.bg-grey-pc').animate({
             'height': greyHeightPC - 310,
           }, 600);
-          //features-boxesの位置を下に下げる
+          //特徴のスライダー部分の位置を下に下げる
           jQuery('#features-boxes-sp').animate({
             'margin-top': minusMarginSP + 455,
           }, 600);
@@ -316,7 +318,7 @@
           jQuery('.features-boxes-pc').animate({
             'margin-top': minusMarginPC + 310,
           }, 600);
-          //「HEPEREの特徴」（topchange部分）を下に下げる
+          //「HEPEREの特徴」の文字を下に下げる
           jQuery('#topchange-sp').animate({
             'top': topChangeTopSP + 450,
           }, 600);
@@ -331,7 +333,8 @@
       unclicked();
     });
 
-    //画面幅を変更した際に、画面幅に応じて機能紹介部分のsp/md/pcビューを切り替え
+    /* 画面幅を変更した際に、画面幅に応じて機能紹介部分のsp/md/pcビューの切り替えを行い、要素の表示／非表示によるレイアウト崩れが生じないよう灰色の背景や赤い帯部分等の位置を調整
+    */
     jQuery(window).resize(function() {
       let windowSize = jQuery(window).width();
       //WordPress側で設定されたコンテンツ幅を取得
@@ -340,7 +343,7 @@
       let windowWidth = jQuery(window).width();
       //灰色の背景部分の位置を調整するための値を取得
       let bgGreyMarginLeft = (Math.abs((maxContentWidth - windowWidth)) * -1 / 2) - 12.5;
-      //画面幅が900〜1180pxの場合、背景部分のmargin-leftを固定
+      //画面幅が900〜1180pxの場合、背景部分のmargin-leftを固定して余白やはみだしが生じないようにする
       if (windowWidth > 899.9 && windowWidth < 1179.9){
         jQuery('.bg-grey-pc').css('margin-left', '-80px');
       } else if (windowWidth > maxContentWidth){
@@ -349,7 +352,7 @@
         jQuery('.bg-grey-pc').css('margin-left', '-12.5px');
       }
       if ( windowSize > 899.5 ) {
-        //変更された後のfunctionsの高さと「HEPEREの特徴」部分のtopを取得
+        //変更された後のfunctionsの高さと「hepereの特徴」の文字部分のtopを取得
         let resizeFunctionsHeight = jQuery('.functions').height();
         let topChangePC = jQuery('#topchage-pc').css('top');
         //spとmdの赤い帯を非表示
