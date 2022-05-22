@@ -2,7 +2,7 @@
 /**
  * 子テーマのパス, URI
  */
-define( 'HEPERE_CHILD_THEME_PATH', get_template_directory() );
+define( 'HEPERE_CHILD_THEME_PATH', get_stylesheet_directory() );
 //define( 'HEPERE_CHILD_THEME_URI', get_template_directory_uri() );
 define( 'HEPERE_CHILD_THEME_URI', get_stylesheet_directory_uri() );
 
