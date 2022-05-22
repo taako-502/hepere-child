@@ -2,9 +2,13 @@
 /**
  * 子テーマのパス, URI
  */
-define( 'HEPERE_CHILD_THEME_PATH', get_template_directory() );
+define( 'HEPERE_CHILD_THEME_PATH', get_stylesheet_directory() );
 //define( 'HEPERE_CHILD_THEME_URI', get_template_directory_uri() );
 define( 'HEPERE_CHILD_THEME_URI', get_stylesheet_directory_uri() );
+
+//ファイル読み込み
+require_once HEPERE_CHILD_THEME_PATH.'/functions/customizer.php';
+require_once HEPERE_CHILD_THEME_PATH.'/functions/data.php';
 
 /**
  * フロント側にCSSをエンキュー
@@ -49,6 +53,15 @@ add_action('after_setup_theme', function() {
       'color' => '#F02700',
     ) ,
   ));
+});
+
+
+/**
+ * カスタマイザー初期設定
+ */
+add_action('customize_register', function($wp_customize) {
+  //会社情報
+  \Hepere_Child_Theme\functions\customizer\register_company_section($wp_customize);
 });
 
 /**
@@ -101,7 +114,7 @@ add_action( 'hepere_on_footer', function() {
     <div class="c-footer-cta__text">
       <p>WordPressテーマ「HEPERE」</p>
       <p>（Gutenberg対応）</p>
-      <p>価格　・・・　7980円</p>
+      <p>価格　・・・　<span id='price'><?php echo Hepere_Child_Theme\functions\data\get_customizer_setting('price'); ?>円</span></p>
     </div>
     <div class="footer-button" onclick="location.href='/hepere-download'">
       <p>購入する</p>
@@ -110,4 +123,3 @@ add_action( 'hepere_on_footer', function() {
 </div>
   <?php
 });
-
