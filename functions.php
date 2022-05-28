@@ -116,7 +116,7 @@ add_action( 'hepere_on_footer', function() {
       <p>（Gutenberg対応）</p>
       <p>価格　・・・　<span id='price'><?php echo Hepere_Child_Theme\functions\data\get_customizer_setting('price'); ?>円</span></p>
     </div>
-    <div class="footer-button" onclick="location.href='/hepere-download'">
+    <div id="footer-cta" class="footer-button" onclick="location.href='/hepere-download'">
       <p>購入する</p>
     </div>
   </div>
